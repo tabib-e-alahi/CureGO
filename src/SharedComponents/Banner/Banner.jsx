@@ -13,7 +13,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 const Banner = () => {
   return (
     <>
-      <div className="border-2 p-10  text-center">
+      <div className="p-10 pt-4  text-center">
         <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -26,13 +26,13 @@ const Banner = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper rounded-sm"
+        className="mySwiper"
       >
-        <SwiperSlide><img className="h-[500px] w-full rounded-sm" src={b1} alt="" /></SwiperSlide>
-        <SwiperSlide><img className="h-[500px] w-full rounded-sm" src={b2} alt="" /></SwiperSlide>
-        <SwiperSlide><img className="h-[500px] w-full rounded-sm" src={b3} alt="" /></SwiperSlide>
-        <SwiperSlide><img className="h-[500px] w-full rounded-sm" src={b4} alt="" /></SwiperSlide>
-        <SwiperSlide><img className="h-[500px] w-full rounded-sm" src={b5} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[500px] w-full" src={b1} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[500px] w-full" src={b2} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[500px] w-full" src={b3} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[500px] w-full" src={b4} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[500px] w-full" src={b5} alt="" /></SwiperSlide>
       </Swiper>
       </div>
     </>

@@ -4,3 +4,7 @@
   font-weight: 500;
   font-style: normal;
 }
+
+.shadow-class{
+    box-shadow: none !important;
+}
