@@ -14,6 +14,7 @@ import NotificationsIcon from "@mui/icons-material/Notifications";
 import MoreIcon from "@mui/icons-material/MoreVert";
 import { useState } from "react";
 import "./Navbar.css";
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -156,10 +157,10 @@ const Navbar = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" >
-        <Toolbar className="bg-[#eeeef3] flex flex-col justify-center px-10 pt-10  gap-8">
+        <Toolbar className="bg-[#eeeef3] flex flex-col justify-center px-10 py-10  gap-8">
           {/* bg-[#f0f9f0] */}
           <div className="grid grid-cols-3  w-full">
-            <div className="flex items-center gap-8 text-black text-lg">
+            <div className="flex items-center gap-8 text-black font-serif text-xl">
               <h3>Home</h3>
               <h3>About Us</h3>
               <h3>Services</h3>
@@ -174,8 +175,8 @@ const Navbar = () => {
                 aria-label="show 4 new mails"
                 color="inherit"
               >
-                <Badge badgeContent={4} color="error">
-                  <MailIcon />
+                <Badge badgeContent={4} className="text-black ">
+                  <AddShoppingCartIcon />
                 </Badge>
               </IconButton>
               <IconButton
@@ -194,7 +195,7 @@ const Navbar = () => {
                 aria-controls={menuId}
                 aria-haspopup="true"
                 onClick={handleProfileMenuOpen}
-                color="inherit"
+                color="black"
               >
                 <AccountCircle />
               </IconButton>
