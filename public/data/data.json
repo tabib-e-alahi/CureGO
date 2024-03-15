@@ -1,0 +1,232 @@
+[
+  {
+    "id": "1",
+    "name": "Hyaluronic Acid Serum",
+    "brand": "Example Brand",
+    "category": "Serums",
+    "description": "This hyaluronic acid serum deeply hydrates and plumps the skin, reducing the appearance of fine lines and wrinkles.",
+    "ingredients": ["Hyaluronic Acid", "Glycerin", "Vitamin C"],
+    "skinConcerns": ["Dryness", "Wrinkles"],
+    "price": 25.99,
+    "image": "serum_image.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4,
+        "comment": "Great product, but a bit pricey."
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Moisturizing Cream",
+    "brand": "SkinCareCo",
+    "category": "Moisturizers",
+    "description": "This luxurious moisturizing cream provides intense hydration and restores the skin's natural barrier.",
+    "ingredients": ["Shea Butter", "Hyaluronic Acid", "Vitamin E"],
+    "skinConcerns": ["Dryness", "Sensitive Skin"],
+    "price": 19.99,
+    "image": "moisturizing_cream_image.jpg",
+    "reviews": [
+      {
+        "user": "HealthySkin",
+        "rating": 5,
+        "comment": "Love how soft and hydrated my skin feels after using this cream!"
+      },
+      {
+        "user": "SensitiveSoul",
+        "rating": 4,
+        "comment": "Gentle enough for my sensitive skin, but wish it was a bit more affordable."
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Acne Spot Treatment",
+    "brand": "ClearSkin",
+    "category": "Acne Treatments",
+    "description": "This targeted spot treatment quickly reduces the size and redness of acne breakouts without drying out the skin.",
+    "ingredients": ["Salicylic Acid", "Tea Tree Oil", "Calamine"],
+    "skinConcerns": ["Acne", "Blemishes"],
+    "price": 12.99,
+    "image": "acne_spot_treatment_image.jpg",
+    "reviews": [
+      {
+        "user": "ClearSkinFanatic",
+        "rating": 5,
+        "comment": "Miracle worker! Clears up my acne spots overnight."
+      },
+      {
+        "user": "BreakoutBuster",
+        "rating": 4,
+        "comment": "Effective treatment, but wish it came in a larger size."
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Anti-Aging Eye Cream",
+    "brand": "YouthfulGlow",
+    "category": "Eye Care",
+    "description": "This anti-aging eye cream reduces the appearance of fine lines, wrinkles, and dark circles around the eyes.",
+    "ingredients": ["Retinol", "Vitamin C", "Peptides"],
+    "skinConcerns": ["Aging", "Dark Circles"],
+    "price": 29.99,
+    "image": "anti_aging_eye_cream_image.jpg",
+    "reviews": [
+      {
+        "user": "AgelessBeauty",
+        "rating": 5,
+        "comment": "Obsessed with this eye cream! Noticed a significant improvement in my fine lines and dark circles."
+      },
+      {
+        "user": "TiredEyes",
+        "rating": 4,
+        "comment": "Works well for reducing puffiness, but didn't see much difference in my dark circles."
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Gentle Cleansing Foam",
+    "brand": "PureEssence",
+    "category": "Cleansers",
+    "description": "This gentle cleansing foam effectively removes dirt, oil, and makeup without stripping the skin's natural moisture.",
+    "ingredients": ["Aloe Vera", "Green Tea Extract", "Hyaluronic Acid"],
+    "skinConcerns": ["Cleansing", "Hydration"],
+    "price": 15.99,
+    "image": "cleansing_foam_image.jpg",
+    "reviews": [
+      {
+        "user": "CleanSlate",
+        "rating": 5,
+        "comment": "Leaves my skin feeling clean and refreshed without any dryness!"
+      },
+      {
+        "user": "MakeupLover",
+        "rating": 4,
+        "comment": "Effective makeup remover, but wish it had a more luxurious scent."
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Brightening Serum",
+    "brand": "RadiantSkin",
+    "category": "Serums",
+    "description": "This brightening serum evens out skin tone, reduces dark spots, and promotes a radiant complexion.",
+    "ingredients": ["Vitamin C", "Niacinamide", "Alpha Arbutin"],
+    "skinConcerns": ["Uneven Skin Tone", "Dark Spots"],
+    "price": 34.99,
+    "image": "brightening_serum_image.jpg",
+    "reviews": [
+      {
+        "user": "GlowGetter",
+        "rating": 5,
+        "comment": "My holy grail serum! Noticed a significant improvement in my skin's brightness and clarity."
+      },
+      {
+        "user": "SunSpotSavior",
+        "rating": 4,
+        "comment": "Works well for fading sun spots, but takes some time to see results."
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Hydrating Sheet Mask",
+    "brand": "DewySkin",
+    "category": "Masks",
+    "description": "This hydrating sheet mask instantly plumps and moisturizes the skin, leaving it dewy and radiant.",
+    "ingredients": ["Hyaluronic Acid", "Cucumber Extract", "Glycerin"],
+    "skinConcerns": ["Dehydration", "Dullness"],
+    "price": 5.99,
+    "image": "hydrating_sheet_mask_image.jpg",
+    "reviews": [
+      {
+        "user": "MoistureMaven",
+        "rating": 5,
+        "comment": "My go-to mask for a quick hydration boost! Leaves my skin feeling soft and refreshed."
+      },
+      {
+        "user": "GlowGetter",
+        "rating": 4,
+        "comment": "Love the results, but wish the mask material was a bit thicker."
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Exfoliating Scrub",
+    "brand": "SilkySmooth",
+    "category": "Exfoliators",
+    "description": "This gentle exfoliating scrub buffs away dead skin cells, leaving the skin smooth, soft, and glowing.",
+    "ingredients": ["Apricot Kernel Powder", "Aloe Vera", "Jojoba Beads"],
+    "skinConcerns": ["Exfoliation", "Smoothness"],
+    "price": 18.99,
+    "image": "exfoliating_scrub_image.jpg",
+    "reviews": [
+      {
+        "user": "GlowGetter",
+        "rating": 5,
+        "comment": "Leaves my skin feeling incredibly soft and radiant after just one use!"
+      },
+      {
+        "user": "SensitiveSkin",
+        "rating": 4,
+        "comment": "Gentle enough for my sensitive skin, but wish the scent was a bit milder."
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Soothing Calming Cream",
+    "brand": "CalmCare",
+    "category": "Sensitive Skin",
+    "description": "This soothing calming cream provides instant relief to sensitive and irritated skin, reducing redness and inflammation.",
+    "ingredients": ["Chamomile Extract", "Aloe Vera", "Centella Asiatica"],
+    "skinConcerns": ["Sensitive Skin", "Redness"],
+    "price": 22.99,
+    "image": "soothing_calming_cream_image.jpg",
+    "reviews": [
+      {
+        "user": "SensitiveSoul",
+        "rating": 5,
+        "comment": "Lifesaver for my sensitive skin! Calms down redness and irritation like magic."
+      },
+      {
+        "user": "RednessRelief",
+        "rating": 4,
+        "comment": "Effective for reducing redness, but wish it absorbed faster into the skin."
+      }
+    ]
+  },
+  {
+    "id": "10",
+    "name": "Sunscreen Lotion SPF 50",
+    "brand": "SunSafe",
+    "category": "Sun Care",
+    "description": "This lightweight sunscreen lotion provides broad-spectrum protection against UVA and UVB rays, preventing sunburn and premature aging.",
+    "ingredients": ["Avobenzone", "Octinoxate", "Zinc Oxide"],
+    "skinConcerns": ["Sun Protection", "Anti-Aging"],
+    "price": 14.99,
+    "image": "sunscreen_lotion_image.jpg",
+    "reviews": [
+      {
+        "user": "SunSafeUser",
+        "rating": 5,
+        "comment": "My holy grail sunscreen! Lightweight, non-greasy, and provides excellent sun protection."
+      },
+      {
+        "user": "SensitiveSkin",
+        "rating": 4,
+        "comment": "Gentle enough for my sensitive skin, but wish it didn't leave a white cast."
+      }
+    ]
+  }
+]
