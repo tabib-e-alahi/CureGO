@@ -155,8 +155,8 @@ const Navbar = () => {
   );
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" className="shadow-class">
+    <Box className="mx-4" sx={{ flexGrow: 1 }}>
+      <AppBar position="static" className="shadow-class ">
         <Toolbar className="bg-white flex flex-col justify-center px-10 py-6  gap-8">
           {/* bg-[#f0f9f0] */}
           <div className="grid grid-cols-3  w-full">
