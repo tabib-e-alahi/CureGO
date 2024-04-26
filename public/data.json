@@ -31,7 +31,7 @@
     "ingredients": ["Shea Butter", "Hyaluronic Acid", "Vitamin E"],
     "skinConcerns": ["Dryness", "Sensitive Skin"],
     "price": 19.99,
-    "image": "moisturizing_cream_image.jpg",
+    "image": "https://i.ibb.co/YQ4qTFB/Moisturizing-Cream.png",
     "reviews": [
       {
         "user": "HealthySkin",
@@ -41,6 +41,11 @@
       {
         "user": "SensitiveSoul",
         "rating": 4,
+        "comment": "Gentle enough for my sensitive skin, but wish it was a bit more affordable."
+      },
+      {
+        "user": "SensitiveSoul",
+        "rating": 4.5,
         "comment": "Gentle enough for my sensitive skin, but wish it was a bit more affordable."
       }
     ]
@@ -54,7 +59,7 @@
     "ingredients": ["Salicylic Acid", "Tea Tree Oil", "Calamine"],
     "skinConcerns": ["Acne", "Blemishes"],
     "price": 12.99,
-    "image": "acne_spot_treatment_image.jpg",
+    "image": "https://i.ibb.co/rpBvnm0/Hyaluronic.png",
     "reviews": [
       {
         "user": "ClearSkinFanatic",
@@ -77,7 +82,7 @@
     "ingredients": ["Retinol", "Vitamin C", "Peptides"],
     "skinConcerns": ["Aging", "Dark Circles"],
     "price": 29.99,
-    "image": "anti_aging_eye_cream_image.jpg",
+    "image": "https://i.ibb.co/YQ4qTFB/Moisturizing-Cream.png",
     "reviews": [
       {
         "user": "AgelessBeauty",
@@ -100,7 +105,7 @@
     "ingredients": ["Aloe Vera", "Green Tea Extract", "Hyaluronic Acid"],
     "skinConcerns": ["Cleansing", "Hydration"],
     "price": 15.99,
-    "image": "cleansing_foam_image.jpg",
+    "image": "https://i.ibb.co/rpBvnm0/Hyaluronic.png",
     "reviews": [
       {
         "user": "CleanSlate",
@@ -109,7 +114,7 @@
       },
       {
         "user": "MakeupLover",
-        "rating": 4,
+        "rating": 4.2,
         "comment": "Effective makeup remover, but wish it had a more luxurious scent."
       }
     ]
@@ -123,8 +128,13 @@
     "ingredients": ["Vitamin C", "Niacinamide", "Alpha Arbutin"],
     "skinConcerns": ["Uneven Skin Tone", "Dark Spots"],
     "price": 34.99,
-    "image": "brightening_serum_image.jpg",
+    "image": "https://i.ibb.co/YQ4qTFB/Moisturizing-Cream.png",
     "reviews": [
+      {
+        "user": "GlowGetter",
+        "rating": 5,
+        "comment": "My holy grail serum! Noticed a significant improvement in my skin's brightness and clarity."
+      },
       {
         "user": "GlowGetter",
         "rating": 5,
@@ -146,7 +156,7 @@
     "ingredients": ["Hyaluronic Acid", "Cucumber Extract", "Glycerin"],
     "skinConcerns": ["Dehydration", "Dullness"],
     "price": 5.99,
-    "image": "hydrating_sheet_mask_image.jpg",
+    "image": "https://i.ibb.co/rpBvnm0/Hyaluronic.png",
     "reviews": [
       {
         "user": "MoistureMaven",
@@ -169,7 +179,7 @@
     "ingredients": ["Apricot Kernel Powder", "Aloe Vera", "Jojoba Beads"],
     "skinConcerns": ["Exfoliation", "Smoothness"],
     "price": 18.99,
-    "image": "exfoliating_scrub_image.jpg",
+    "image": "https://i.ibb.co/YQ4qTFB/Moisturizing-Cream.png",
     "reviews": [
       {
         "user": "GlowGetter",
@@ -192,7 +202,7 @@
     "ingredients": ["Chamomile Extract", "Aloe Vera", "Centella Asiatica"],
     "skinConcerns": ["Sensitive Skin", "Redness"],
     "price": 22.99,
-    "image": "soothing_calming_cream_image.jpg",
+    "image": "https://i.ibb.co/rpBvnm0/Hyaluronic.png",
     "reviews": [
       {
         "user": "SensitiveSoul",
@@ -215,7 +225,7 @@
     "ingredients": ["Avobenzone", "Octinoxate", "Zinc Oxide"],
     "skinConcerns": ["Sun Protection", "Anti-Aging"],
     "price": 14.99,
-    "image": "sunscreen_lotion_image.jpg",
+    "image": "https://i.ibb.co/YQ4qTFB/Moisturizing-Cream.png",
     "reviews": [
       {
         "user": "SunSafeUser",

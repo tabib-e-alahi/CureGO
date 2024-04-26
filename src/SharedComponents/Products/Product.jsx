@@ -20,12 +20,18 @@ const Product = ({ product }) => {
  
 
   return (
-    <div className="shadow-inner shadow-slate-200 p-8 text-center rounded-sm">
-      <img src={image} alt="" />
-      <h2>{name}</h2>
+    <div className="shadow-inner shadow-[#8277da]  text-center rounded-sm py-4">
+      <div className="">
+      <img className="w-60 h-48 mx-auto" src={image} alt="" />
+      </div>
+      <div className="space-y-4 mt-4">
+      <h2 className="text-[#363062] font-medium text-lg">{name}</h2>
+      <div className="flex gap-2 justify-center items-center">
       <Rating name="half-rating-read" value={avgRatings} precision={0.1} readOnly />
       <p>{reviewCount} reviews</p>
-      <p>price: ${price}</p>
+      </div>
+      <p className="font-bold text-lg text-[#e2557b] ">${price}</p>
+      </div>
     </div>
   );
 };
