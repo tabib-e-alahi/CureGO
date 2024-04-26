@@ -8,7 +8,7 @@
     "ingredients": ["Hyaluronic Acid", "Glycerin", "Vitamin C"],
     "skinConcerns": ["Dryness", "Wrinkles"],
     "price": 25.99,
-    "image": "serum_image.jpg",
+    "image": "https://i.ibb.co/rpBvnm0/Hyaluronic.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -17,7 +17,7 @@
       },
       {
         "user": "BeautyQueen",
-        "rating": 4,
+        "rating": 4.5,
         "comment": "Great product, but a bit pricey."
       }
     ]
