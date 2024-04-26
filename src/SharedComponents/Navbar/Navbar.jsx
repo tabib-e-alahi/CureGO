@@ -157,7 +157,7 @@ const Navbar = () => {
   return (
     <Box className="" sx={{ flexGrow: 1 }}>
       <AppBar position="static" className="shadow-class ">
-        <Toolbar className="bg-white flex flex-col justify-center  py-6  gap-8">
+        <Toolbar className="bg-white flex flex-col justify-center  py-8  gap-8">
           {/* bg-[#f0f9f0] */}
           <div className="grid grid-cols-3  w-full">
              {/* website title =========== */}
@@ -224,7 +224,7 @@ const Navbar = () => {
           
         </Toolbar>
         {/* navigation items or menus ========= */}
-        <div className="flex items-center gap-8 text-white font-serif text-xl bg-[#363062] px-10 py-2">
+        <div className="flex items-center gap-8 text-white font-serif text-lg bg-[#363062] px-10 py-2">
             <h3>Home</h3>
             <h3>About Us</h3>
             <h3>Services</h3>
