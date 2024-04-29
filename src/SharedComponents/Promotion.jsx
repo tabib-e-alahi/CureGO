@@ -14,7 +14,7 @@ const Promotion = () => {
                 <p className='flex items-end gap-1'><GetAppIcon/>Download Our App</p>
                 <p className='flex items-end gap-1'><PersonAddIcon/>Refer a Friend,save 5% </p>
             </div>
-            <div className="bg-[#E6D0CA] font-medium text-center py-4">
+            <div className="bg-[#E6D0CA] text-black text-center py-4">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quidem id quos, animi non reprehenderit! Saepe, itaque vitae! Magni, illo!
         </div>
         </div>

@@ -11,10 +11,9 @@ import SearchIcon from "@mui/icons-material/Search";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MailIcon from "@mui/icons-material/Mail";
 import NotificationsIcon from "@mui/icons-material/Notifications";
-import MoreIcon from "@mui/icons-material/MoreVert";
 import { useState } from "react";
 import "./Navbar.css";
-import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
+import { BsCart4 } from "react-icons/bs";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -74,10 +73,6 @@ const Navbar = () => {
   const handleMenuClose = () => {
     setAnchorEl(null);
     handleMobileMenuClose();
-  };
-
-  const handleMobileMenuOpen = (event) => {
-    setMobileMoreAnchorEl(event.currentTarget);
   };
 
   const menuId = "primary-search-account-menu";
@@ -160,9 +155,9 @@ const Navbar = () => {
         <Toolbar className="bg-[#f6f4f1]  py-8  gap-8">
           {/* bg-[#f0f9f0] */}
           <div className="grid grid-cols-3  w-11/12 mx-auto">
-             {/* website title =========== */}
+            {/* website title =========== */}
             <h1 className="text-[#212732] text-5xl logo ">CureCo</h1>
-             {/* search field for products ============== */}
+            {/* search field for products ============== */}
             <div className="w-[400px]">
               <Search className="border-[1.5px] mt-1 rounded-sm border-[#827397] text-black ">
                 <SearchIconWrapper>
@@ -175,23 +170,30 @@ const Navbar = () => {
               </Search>
             </div>
 
-            <div className="flex justify-end gap-8">
-              
+            <div className="flex items-center justify-end gap-8">
+              <div className="flex justify-center items-center gap-1">
+                <BsCart4 className="text-2xl font-bold text-[#A6776A]"></BsCart4>
+                <span className="text-black text-lg font-medium">Cart</span>
+              </div>
+              <div className="avatar">
+                <div className="w-10 rounded-full ring ring-[#f6f4f1]  ring-offset-2">
+                  <img className="text-black font-bold" src="" alt="TEA" />
+                </div>
+              </div>
             </div>
           </div>
-          
         </Toolbar>
         {/* navigation items or menus ========= */}
         <div className="flex items-center gap-8 text-white font-serif text-lg bg-[#A6776A] px-20 py-2">
-            <h3>Home</h3>
-            <h3>About Us</h3>
-            <h3>Services</h3>
-            <h3>Contact</h3>
-            <h3>Home</h3>
-            <h3>About Us</h3>
-            <h3>Services</h3>
-            <h3>Contact</h3>
-          </div>
+          <h3>Home</h3>
+          <h3>About Us</h3>
+          <h3>Services</h3>
+          <h3>Contact</h3>
+          <h3>Home</h3>
+          <h3>About Us</h3>
+          <h3>Services</h3>
+          <h3>Contact</h3>
+        </div>
       </AppBar>
       {renderMobileMenu}
       {renderMenu}
