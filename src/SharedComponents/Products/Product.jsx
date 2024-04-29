@@ -1,15 +1,17 @@
 import { Rating } from "@mui/material";
+import './Product.css'
+
 
 const Product = ({ product }) => {
   console.log(product);
   const {
     image,
     name,
-    brand,
-    category,
-    description,
-    ingredients,
-    skinConcerns,
+    // brand,
+    // category,
+    // description,
+    // ingredients,
+    // skinConcerns,
     price,
     reviews
   } = product;
@@ -20,9 +22,9 @@ const Product = ({ product }) => {
  
 
   return (
-    <div className="shadow-inner shadow-[#8277da]  text-center rounded-sm py-4">
+    <div className="card_style  text-center rounded-sm py-4">
       <div className="">
-      <img className="w-60 h-48 mx-auto" src={image} alt="" />
+      <img className="w-60 h-48 mx-auto image-zoomer" src={image} alt="" />
       </div>
       <div className="space-y-4 mt-4">
       <h2 className="text-[#363062] font-medium text-lg">{name}</h2>

@@ -156,15 +156,15 @@ const Navbar = () => {
 
   return (
     <Box className="" sx={{ flexGrow: 1 }}>
-      <AppBar position="static" className="shadow-class ">
-        <Toolbar className="bg-white flex flex-col justify-center  py-8  gap-8">
+      <AppBar position="static" className="shadow-class">
+        <Toolbar className="bg-[#f6f4f1]  py-8  gap-8">
           {/* bg-[#f0f9f0] */}
-          <div className="grid grid-cols-3  w-full">
+          <div className="grid grid-cols-3  w-11/12 mx-auto">
              {/* website title =========== */}
-            <h1 className="text-[#212732] text-5xl logo ">CureGo</h1>
+            <h1 className="text-[#212732] text-5xl logo ">CureCo</h1>
              {/* search field for products ============== */}
             <div className="w-[400px]">
-              <Search className="border-2 rounded-sm border-[#827397] text-black mx-0">
+              <Search className="border-[1.5px] mt-1 rounded-sm border-[#827397] text-black ">
                 <SearchIconWrapper>
                   <SearchIcon />
                 </SearchIconWrapper>
@@ -176,55 +176,17 @@ const Navbar = () => {
             </div>
 
             <div className="flex justify-end gap-8">
-              <Box sx={{ display: { xs: "none", md: "flex" } }}>
-                <IconButton
-                  size="large"
-                  aria-label="show 4 new mails"
-                  color="inherit"
-                >
-                  <Badge badgeContent={4} className="text-black ">
-                    <AddShoppingCartIcon />
-                  </Badge>
-                </IconButton>
-                <IconButton
-                  size="large"
-                  aria-label="show 17 new notifications"
-                  color="inherit"
-                >
-                  <Badge badgeContent={17} color="error">
-                    <NotificationsIcon />
-                  </Badge>
-                </IconButton>
-                <IconButton
-                  size="large"
-                  edge="end"
-                  aria-label="account of current user"
-                  aria-controls={menuId}
-                  aria-haspopup="true"
-                  onClick={handleProfileMenuOpen}
-                  color="black"
-                >
-                  <AccountCircle />
-                </IconButton>
-              </Box>
-              <Box sx={{ display: { xs: "flex", md: "none" } }}>
-                <IconButton
-                  size="large"
-                  aria-label="show more"
-                  aria-controls={mobileMenuId}
-                  aria-haspopup="true"
-                  onClick={handleMobileMenuOpen}
-                  color="inherit"
-                >
-                  <MoreIcon />
-                </IconButton>
-              </Box>
+              
             </div>
           </div>
           
         </Toolbar>
         {/* navigation items or menus ========= */}
-        <div className="flex items-center gap-8 text-white font-serif text-lg bg-[#363062] px-10 py-2">
+        <div className="flex items-center gap-8 text-white font-serif text-lg bg-[#A6776A] px-20 py-2">
+            <h3>Home</h3>
+            <h3>About Us</h3>
+            <h3>Services</h3>
+            <h3>Contact</h3>
             <h3>Home</h3>
             <h3>About Us</h3>
             <h3>Services</h3>
