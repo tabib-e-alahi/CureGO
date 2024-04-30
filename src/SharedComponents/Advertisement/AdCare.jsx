@@ -16,7 +16,7 @@ const AdCare = () => {
           shield helping the skin to better defend itself against environmental
           factors.
         </p>
-        <button className="button_class font-serif" role="button">BRING IT HOME</button>
+        <button className="bring_it_home_btn font-serif" role="button">BRING IT HOME</button>
       </div>
       <div className="h-[600px]">
         <img className="h-full w-full" src="https://i.ibb.co/hD7gktg/extra.png" alt="" />
