@@ -14,7 +14,7 @@ const Products = () => {
 
   return (
     <div className="my-10 w-11/12 mx-auto pt-10">
-      <h1 className="text-center text-5xl font-semibold font-serif mb-16">
+      <h1 className="text-center text-5xl font-semibold font-serif text-black mb-16">
         All in One
       </h1>
       <div className="grid grid-cols-4 gap-x-6 gap-y-20 ">
