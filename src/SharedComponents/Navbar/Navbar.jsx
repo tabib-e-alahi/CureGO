@@ -156,7 +156,7 @@ const Navbar = () => {
           {/* bg-[#f0f9f0] */}
           <div className="grid grid-cols-3  w-11/12 mx-auto">
             {/* website title =========== */}
-            <h1 className="text-[#212732] text-5xl logo ">CureCo</h1>
+            <h1 className="text-black text-5xl logo ">CureCo</h1>
             {/* search field for products ============== */}
             <div className="w-[400px]">
               <Search className="border-[1.5px] mt-1 rounded-sm border-[#827397] text-black ">
