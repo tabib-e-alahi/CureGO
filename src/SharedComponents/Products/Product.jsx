@@ -44,7 +44,7 @@ const Product = ({ product }) => {
           </div>
           <p className="font-medium text-lg text-black ">${price}</p>
         </div>
-      </Link>
+    </Link>
       <button className="button_class normal w-10/12">Add To Cart</button>
     </div>
   );

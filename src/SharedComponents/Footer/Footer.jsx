@@ -2,7 +2,7 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <footer className="footer gap-x-1 p-10 bg-[#A6776A] text-slate-200">
+    <footer className="footer gap-x-1 p-10 bg-[#A6776A]  text-white">
       <aside>
         <h1 className='logo text-5xl'>CureCo</h1>
       </aside>
