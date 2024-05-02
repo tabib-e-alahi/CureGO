@@ -1,15 +1,26 @@
 import "./Navbar.css";
 import profile from "../../assets/profile.png";
 import cart from "../../assets/cart.png";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 const Navbar = () => {
+  const { user } = useAuth();
+
   const navLinks = (
     <>
-      <li><NavLink className='nav_items'>Home</NavLink></li>
-      <li><NavLink>About</NavLink></li>
-      <li><NavLink>Contact</NavLink></li>
-      <li><NavLink>About</NavLink></li>
+      <li>
+        <NavLink className="nav_items">Home</NavLink>
+      </li>
+      <li>
+        <NavLink>About</NavLink>
+      </li>
+      <li>
+        <NavLink>Contact</NavLink>
+      </li>
+      <li>
+        <NavLink>About</NavLink>
+      </li>
     </>
   );
 
@@ -56,12 +67,20 @@ const Navbar = () => {
             placeholder="Search"
             className="bg-[#f6f4f1] rounded-sm  border w-32 py-1 ps-1"
           />
+          {user ? (
+            <h1>User Exist</h1>
+          ) : (
+            <Link to="/login">
+              <img className="w-6 h-6" src={profile} alt="" />
+            </Link>
+          )}
 
-          <img className="w-6 h-6" src={profile} alt="" />
           <img className="w-6 h-6" src={cart} alt="" />
         </div>
       </div>
-      <ul className="flex justify-center items-center gap-10 text-xl text-black pb-4">{navLinks}</ul>
+      <ul className="flex justify-center items-center gap-10 text-xl text-black pb-4">
+        {navLinks}
+      </ul>
     </div>
   );
 };
