@@ -11,7 +11,7 @@ const Login = () => {
         // grid lg:grid-cols-5 min-h-screen
         <div className=""> 
       <div className="lg:w-2/3 mx-auto p-4 lg:col-span-3">
-        <h1 className="text-center text-xl font-semibold mt-8 mb-2 text-[#172734]">
+        <h1 className="text-center text-2xl font-semibold mt-8 mb-2 text-[#172734]">
           Log In to your Account
         </h1>
         <div className="mb-6 p-10 w-80 lg:w-96 mx-auto rounded-sm  login-form">
