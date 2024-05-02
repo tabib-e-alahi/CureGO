@@ -55,7 +55,7 @@ const Login = () => {
           <div className="flex justify-center items-center gap-1">
             <p className="font-normal">New Here?</p>
             <Link to="/signUp">
-              <button className="btn btn-link pl-0">Register</button>
+              <button className="btn btn-link pl-0">SignUp</button>
             </Link>
           </div>
         </div>
