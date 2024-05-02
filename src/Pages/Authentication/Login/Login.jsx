@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import './Login.css'
+import SocialLogin from "../../../SharedComponents/SocialLogin/SocialLogin";
 
 const Login = () => {
     const handleLogin = () =>{
@@ -50,7 +51,7 @@ const Login = () => {
           </form>
           {/* social log in  */}
 
-          {/* <SocialLogin></SocialLogin> */}
+          <SocialLogin></SocialLogin>
           <div className="flex justify-center items-center gap-1">
             <p className="font-normal">New Here?</p>
             <Link to="/signUp">
