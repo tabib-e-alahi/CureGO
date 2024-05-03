@@ -18,15 +18,36 @@ const SignUp = () => {
       }
 
     return (
-        <div className="lg:w-2/3 mx-auto p-4 lg:col-span-3">
-      <h1 className="text-center text-2xl font-semibold mt-8 mb-2 text-[#172734]">
+        <div className="mx-auto p-4 lg:col-span-3">
+      <h1 className="text-center text-3xl font-bold mt-8 mb-2 text-[#172734]">
         Register your account
       </h1>
       <div className="register-form mb-6 p-10 w-80 lg:w-96 mx-auto rounded-sm">
         <form className="mb-6 px-4" onSubmit={handleSubmit(onSubmit)}>
           {/* Personal Information================== */}
           <div className="flex flex-col gap-6">
-            <div className="flex flex-col gap-1">
+            
+
+            
+
+            
+
+            
+          </div>
+        </form>
+        <SocialLogin></SocialLogin>
+        <div className="flex justify-center items-center gap-1">
+          <p className="font-normal">Already have an account?</p>
+          <Link to="/login">
+            <button className="btn btn-link pl-0">Login</button>
+          </Link>
+        </div>
+      </div>
+
+
+<form className="grid grid-cols-2 gap-10 w-2/3 mx-auto shadow-md shadow-black p-10 my-10">
+  <div>
+  <div className="flex flex-col gap-1">
               <label htmlFor="" className="pb-1">
                 Your name
               </label>
@@ -40,7 +61,6 @@ const SignUp = () => {
                 <span className="text-red-500">This field is required</span>
               )}
             </div>
-
             <div className="flex flex-col gap-1">
               <label htmlFor="" className="pb-1">
                 Photo URL
@@ -55,7 +75,6 @@ const SignUp = () => {
                 <span className="text-red-500">This field is required</span>
               )}
             </div>
-
             <div className="flex flex-col gap-1">
               <label htmlFor="" className="pb-1">
                 Enter Email
@@ -70,8 +89,9 @@ const SignUp = () => {
                 <span className="text-red-500">This field is required</span>
               )}
             </div>
-
-            <div className="flex flex-col gap-1">
+  </div>
+  <div>
+  <div className="flex flex-col gap-1">
               <label htmlFor="" className="pb-1">
                 Enter Password
               </label>
@@ -100,16 +120,10 @@ const SignUp = () => {
                 Register
               </button>
             </div>
-          </div>
-        </form>
-        <SocialLogin></SocialLogin>
-        <div className="flex justify-center items-center gap-1">
-          <p className="font-normal">Already have an account?</p>
-          <Link to="/login">
-            <button className="btn btn-link pl-0">Login</button>
-          </Link>
-        </div>
-      </div>
+  </div>
+</form>
+
+      
     </div>
     );
 };
