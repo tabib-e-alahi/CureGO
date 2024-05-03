@@ -5,16 +5,26 @@
     
 } */
 
+.custome_font_family{
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .form-input{
     width: 100%;
     padding: 12px 16px 11px;
     font-size: 14px;
-    background-color: #fff;
-    border: 1px solid #d7e3e7;
+    /* background-color: #f6f4f1; */
+    border: 0.1px solid rgb(25, 25, 25);
     box-sizing: border-box;
     box-shadow: 0 2px 4px rgba(14,79,206,.13);
-    border-radius: 3px;
-    color: #596a78;
-    -webkit-transition: all .2s ease;
+    border-radius: 1px;
+    /* color: #596a78; */
+    /* -webkit-transition: all .2s ease;
     transition: all .2s ease;
+    font-family: 'Times New Roman', Times, serif; */
+}
+
+.form-input:focus{
+    outline: none;
+    
 }
