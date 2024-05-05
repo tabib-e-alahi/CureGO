@@ -6,7 +6,7 @@ import useAuth from "../../hooks/useAuth";
 
 const Navbar = () => {
   const { user } = useAuth();
-
+  console.log(user);
   const navLinks = (
     <>
       <li>
@@ -68,7 +68,31 @@ const Navbar = () => {
             className="bg-[#f6f4f1] rounded-sm  border w-32 py-1 ps-1"
           />
           {user ? (
-            <h1>User Exist</h1>
+            <div className="dropdown dropdown-end">
+              <button
+                tabIndex={0}
+                role="button"
+                className="flex justify-center items-center gap-2"
+              >
+                {user?.photoURL ? (
+                  <img src={user?.photoURL} alt="" />
+                ) : (
+                  <img className="w-6 h-6" src={profile} alt="" />
+                )}
+                <h1>{user?.displayName}</h1>
+              </button>
+              <ul
+                tabIndex={0}
+                className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4"
+              >
+                <li>
+                  <a>Item 1</a>
+                </li>
+                <li>
+                  <a>Item 2</a>
+                </li>
+              </ul>
+            </div>
           ) : (
             <Link to="/login">
               <img className="w-6 h-6" src={profile} alt="" />

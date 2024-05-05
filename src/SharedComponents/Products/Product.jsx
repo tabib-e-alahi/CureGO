@@ -3,7 +3,7 @@ import "./Product.css";
 import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
-  console.log(product);
+  // console.log(product);
   const {
     id,
     image,

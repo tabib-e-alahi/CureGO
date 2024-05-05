@@ -1,19 +1,36 @@
-// import { Link } from "react-router-dom";
+
 import SocialLogin from "../../../SharedComponents/SocialLogin/SocialLogin";
 import { useForm } from "react-hook-form";
 import "./SignUp.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import useAuth from "../../../hooks/useAuth";
+import Swal from "sweetalert2";
 
 const SignUp = () => {
+  const { createUser } = useAuth();
+  const navigate = useNavigate();
+
   const {
     register,
     handleSubmit,
-    // reset,
+    reset,
     formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
     console.log(data);
+    createUser(data.email, data.password).then((result) => {
+      const loggedUser = result.user;
+      console.log(loggedUser);
+      reset();
+      Swal.fire({
+        title: "Registration Completed",
+        text: "thanks For registering",
+        icon: "success",
+      });
+      navigate("/");
+        
+    }).catch((error) => console.log(error));
   };
 
   return (
@@ -116,7 +133,7 @@ const SignUp = () => {
           </div>
         </div>
         <div className="flex flex-col gap-8">
-        <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-1">
             <label
               htmlFor=""
               className="pb-1 text-black font-medium custome_font_family"
@@ -148,19 +165,32 @@ const SignUp = () => {
               className="p-3  form-input"
               placeholder=""
             />
-            <p className="text-sm text-gray-600">*Your referrals discount is automatically applied a cart</p>
+            <p className="text-sm text-gray-600">
+              *Your referrals discount is automatically applied a cart
+            </p>
           </div>
-          
+
           <div className="w-10/12  mx-auto text-center">
             <button className="px-6 py-3 text-lg  rounded-sm text-white w-full uppercase bg-[#a6776a]">
               Sign Up
             </button>
-            
-            <p className="text-sm text-left">By clicking “SIGN UP”, I agree to CureCo&apos;s <a href="" className="text-blue-600">Terms of Use</a> and <a className="text-blue-600" href="http://">Privacy Policy</a></p>
+
+            <p className="text-sm text-left">
+              By clicking “SIGN UP”, I agree to CureCo&apos;s{" "}
+              <a href="" className="text-blue-600">
+                Terms of Use
+              </a>{" "}
+              and{" "}
+              <a className="text-blue-600" href="http://">
+                Privacy Policy
+              </a>
+            </p>
           </div>
 
           <div className="flex justify-center items-center gap-1">
-            <p className="font-normal text-gray-600">Already have an account?</p>
+            <p className="font-normal text-gray-600">
+              Already have an account?
+            </p>
             <Link to="/login">
               <button className="btn btn-link pl-0">Login</button>
             </Link>
