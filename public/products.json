@@ -1,8 +1,10 @@
+
+
 [
   {
     "product_name": "Hydrating Facial Moisturizer",
     "brand_name": "SkinGlow",
-    "product_image": "https://example.com/images/moisturizer.jpg",
+    "product_image": "https://i.ibb.co/X3NmZHM/file-7.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -33,7 +35,7 @@
   {
     "product_name": "Gentle Foaming Cleanser",
     "brand_name": "PureClean",
-    "product_image": "https://example.com/images/cleanser.jpg",
+    "product_image": "https://i.ibb.co/Z6rpvRq/file.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -64,7 +66,7 @@
   {
     "product_name": "Exfoliating Facial Scrub",
     "brand_name": "FreshGlow",
-    "product_image": "https://example.com/images/scrub.jpg",
+    "product_image": "https://i.ibb.co/xHSxGg2/file-1.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -95,7 +97,7 @@
   {
     "product_name": "Hydrating Sheet Mask",
     "brand_name": "DewySkin",
-    "product_image": "https://example.com/images/sheet-mask.jpg",
+    "product_image": "https://i.ibb.co/BwdfZfX/file-2.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -126,7 +128,7 @@
   {
     "product_name": "Nourishing Night Cream",
     "brand_name": "NightCare",
-    "product_image": "https://example.com/images/night-cream.jpg",
+    "product_image": "https://i.ibb.co/rZBg2gm/file-3.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -157,7 +159,7 @@
   {
     "product_name": "Brightening Vitamin C Serum",
     "brand_name": "RadiantGlow",
-    "product_image": "https://example.com/images/vitamin-c-serum.jpg",
+    "product_image": "https://i.ibb.co/Vm6K089/file-5.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -188,7 +190,7 @@
   {
     "product_name": "Soothing Eye Cream",
     "brand_name": "CalmEyes",
-    "product_image": "https://example.com/images/eye-cream.jpg",
+    "product_image": "https://i.ibb.co/qnnMP2d/file-6.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -219,7 +221,7 @@
   {
     "product_name": "Mattifying Sunscreen SPF 50",
     "brand_name": "SunBlocker",
-    "product_image": "https://example.com/images/sunscreen.jpg",
+    "product_image": "https://i.ibb.co/Z6rpvRq/file.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -250,7 +252,7 @@
   {
     "product_name": "Revitalizing Facial Serum",
     "brand_name": "YouthRenew",
-    "product_image": "https://example.com/images/facial-serum.jpg",
+    "product_image": "https://i.ibb.co/xHSxGg2/file-1.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -281,7 +283,7 @@
   {
     "product_name": "Pore-Refining Toner",
     "brand_name": "PurePore",
-    "product_image": "https://example.com/images/toner.jpg",
+    "product_image": "https://i.ibb.co/6YBQRhK/file-4.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -312,7 +314,7 @@
   {
     "product_name": "Restorative Night Oil",
     "brand_name": "NightReplenish",
-    "product_image": "https://example.com/images/night-oil.jpg",
+    "product_image": "https://i.ibb.co/6YBQRhK/file-4.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -343,7 +345,7 @@
   {
     "product_name": "Soothing Aloe Vera Gel",
     "brand_name": "AloeSoothe",
-    "product_image": "https://example.com/images/aloe-vera-gel.jpg",
+    "product_image": "https://i.ibb.co/BwdfZfX/file-2.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -374,7 +376,7 @@
   {
     "product_name": "Rejuvenating Anti-Wrinkle Cream",
     "brand_name": "AgelessBeauty",
-    "product_image": "https://example.com/images/anti-wrinkle-cream.jpg",
+    "product_image": "https://i.ibb.co/Vm6K089/file-5.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -405,7 +407,7 @@
   {
     "product_name": "Hydrating Lip Balm",
     "brand_name": "LipLove",
-    "product_image": "https://example.com/images/lip-balm.jpg",
+    "product_image": "https://i.ibb.co/qnnMP2d/file-6.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -436,7 +438,7 @@
   {
     "product_name": "Calming Lavender Body Lotion",
     "brand_name": "LavenderSoothe",
-    "product_image": "https://example.com/images/body-lotion.jpg",
+    "product_image": "https://i.ibb.co/xHSxGg2/file-1.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -467,7 +469,7 @@
   {
     "product_name": "Brightening Exfoliating Mask",
     "brand_name": "GlowRevive",
-    "product_image": "https://example.com/images/exfoliating-mask.jpg",
+    "product_image": "https://i.ibb.co/Vm6K089/file-5.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -498,7 +500,7 @@
   {
     "product_name": "Hydrating Facial Mist",
     "brand_name": "Mistify",
-    "product_image": "https://example.com/images/facial-mist.jpg",
+    "product_image": "https://i.ibb.co/Z6rpvRq/file.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -529,7 +531,7 @@
   {
     "product_name": "Clarifying Charcoal Mask",
     "brand_name": "CharcoalCleanse",
-    "product_image": "https://example.com/images/charcoal-mask.jpg",
+    "product_image": "https://i.ibb.co/rZBg2gm/file-3.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -560,7 +562,7 @@
   {
     "product_name": "Repairing Hand Cream",
     "brand_name": "HandHeal",
-    "product_image": "https://example.com/images/hand-cream.jpg",
+    "product_image": "https://i.ibb.co/X3NmZHM/file-7.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -591,7 +593,7 @@
   {
     "product_name": "Refreshing Eye Gel",
     "brand_name": "EyeRevive",
-    "product_image": "https://example.com/images/eye-gel.jpg",
+    "product_image": "https://i.ibb.co/qN3j3hF/Brightening-Exfoliating-Mask.png",
     "reviews": [
       {
         "user": "Customer123",
@@ -620,4 +622,6 @@
     "return_policy": "30-day satisfaction guarantee."
   }
 ]
+
+
 
