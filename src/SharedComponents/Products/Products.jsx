@@ -1,7 +1,7 @@
 import Product from "./Product";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
-
+import './Product.css'
 const Products = () => {
   const axiosPublic = useAxiosPublic()
   const { data: products = [],isPending: loading } = useQuery({
@@ -11,10 +11,17 @@ const Products = () => {
         return res.data;
     }
 })
+
+
   
 
   return (
-    <div className="my-10 w-11/12 mx-auto pt-10">
+    <>
+    {
+      loading ? <div className="loader my-40 mx-auto"></div> 
+      :
+      <div className="my-10 w-11/12 mx-auto pt-10">
+      
       <h1 className="text-center text-5xl font-semibold font-serif text-black mb-16">
         All in One
       </h1>
@@ -24,6 +31,8 @@ const Products = () => {
         }
       </div>
     </div>
+    }
+    </>
   );
 };
 
