@@ -1,0 +1,623 @@
+[
+  {
+    "product_name": "Hydrating Facial Moisturizer",
+    "brand_name": "SkinGlow",
+    "product_image": "https://example.com/images/moisturizer.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 29.99,
+    "product_stock_count": 150,
+    "product_subtitle": "Deeply hydrating moisturizer for smooth and radiant skin.",
+    "product_overview": "Our Hydrating Facial Moisturizer is formulated to deeply hydrate and nourish the skin, leaving it feeling soft, supple, and radiant. Enriched with Hyaluronic Acid and Vitamin E, it helps improve skin elasticity and protect against environmental damage. Suitable for all skin types.",
+    "key_ingredients": ["Hyaluronic Acid", "Vitamin E"],
+    "key_ingredients_description": {
+      "Hyaluronic Acid": "Retains moisture, plumps skin, and reduces fine lines.",
+      "Vitamin E": "Provides antioxidant protection and helps maintain skin's natural moisture barrier."
+    },
+    "product_usage": "Apply a small amount to clean, dry skin morning and night, massaging gently until absorbed.",
+    "skin_concerns": ["Hydration", "Radiance", "Elasticity", "Protection against environmental damage"],
+    "ingredients": ["Water", "Glycerin", "Hyaluronic Acid", "Vitamin E", "Shea Butter", "Cetearyl Alcohol", "Caprylic/Capric Triglyceride", "Glyceryl Stearate", "Stearic Acid", "Phenoxyethanol"],
+    "product_quantity": "50ml",
+    "return_policy": "30-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Gentle Foaming Cleanser",
+    "brand_name": "PureClean",
+    "product_image": "https://example.com/images/cleanser.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 19.99,
+    "product_stock_count": 200,
+    "product_subtitle": "Gentle foaming cleanser for clean and refreshed skin.",
+    "product_overview": "Our Gentle Foaming Cleanser effectively removes dirt, oil, and impurities without stripping the skin of its natural moisture. Formulated with Aloe Vera and Green Tea Extract, it soothes and refreshes the skin, leaving it feeling clean and balanced.",
+    "key_ingredients": ["Aloe Vera", "Green Tea Extract"],
+    "key_ingredients_description": {
+      "Aloe Vera": "Soothes and hydrates the skin, reducing redness and inflammation.",
+      "Green Tea Extract": "Provides antioxidant protection, calms irritation, and fights acne-causing bacteria."
+    },
+    "product_usage": "Apply a small amount to wet skin, massage gently in circular motions, then rinse thoroughly with water. Use morning and night.",
+    "skin_concerns": ["Cleansing", "Balance", "Soothing", "Acne"],
+    "ingredients": ["Water", "Sodium Lauroyl Sarcosinate", "Cocamidopropyl Betaine", "Glycerin", "Aloe Barbadensis Leaf Juice", "Camellia Sinensis Leaf Extract", "Coco-Glucoside", "Glyceryl Oleate", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "product_quantity": "150ml",
+    "return_policy": "60-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Exfoliating Facial Scrub",
+    "brand_name": "FreshGlow",
+    "product_image": "https://example.com/images/scrub.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 22.99,
+    "product_stock_count": 120,
+    "product_subtitle": "Gentle exfoliating scrub for smooth and polished skin.",
+    "product_overview": "Our Exfoliating Facial Scrub gently buffs away dead skin cells, leaving the skin smooth, polished, and rejuvenated. Formulated with Apricot Kernel Powder and Jojoba Beads, it provides effective exfoliation without causing irritation or dryness.",
+    "key_ingredients": ["Apricot Kernel Powder", "Jojoba Beads"],
+    "key_ingredients_description": {
+      "Apricot Kernel Powder": "Exfoliates dead skin cells, unclogs pores, and promotes cell turnover.",
+      "Jojoba Beads": "Provide gentle physical exfoliation, leaving the skin soft and smooth."
+    },
+    "product_usage": "Apply to damp skin, massage gently in circular motions, then rinse thoroughly with water. Use 2-3 times per week.",
+    "skin_concerns": ["Exfoliation", "Smoothness", "Radiance", "Texture"],
+    "ingredients": ["Water", "Glycerin", "Apricot Kernel Powder", "Cetearyl Alcohol", "Jojoba Esters", "Glyceryl Stearate", "Caprylic/Capric Triglyceride", "Stearic Acid", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "product_quantity": "100ml",
+    "return_policy": "90-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Hydrating Sheet Mask",
+    "brand_name": "DewySkin",
+    "product_image": "https://example.com/images/sheet-mask.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 15.99,
+    "product_stock_count": 180,
+    "product_subtitle": "Intensely hydrating sheet mask for plump and glowing skin.",
+    "product_overview": "Our Hydrating Sheet Mask is infused with Hyaluronic Acid and Vitamin C to deliver intense hydration and brighten the complexion. It instantly plumps and revitalizes the skin, leaving it dewy, radiant, and rejuvenated.",
+    "key_ingredients": ["Hyaluronic Acid", "Vitamin C"],
+    "key_ingredients_description": {
+      "Hyaluronic Acid": "Attracts and retains moisture, resulting in hydrated, plump skin.",
+      "Vitamin C": "Evens out skin tone, boosts collagen production, and enhances skin radiance."
+    },
+    "product_usage": "Unfold the mask and apply to clean, dry skin. Leave on for 15-20 minutes, then remove and massage any excess serum into the skin. Use 1-2 times per week.",
+    "skin_concerns": ["Hydration", "Radiance", "Plumping", "Even skin tone"],
+    "ingredients": ["Water", "Glycerin", "Butylene Glycol", "Sodium Hyaluronate", "Ascorbic Acid", "Tocopheryl Acetate", "Panthenol", "Allantoin", "Xanthan Gum", "Phenoxyethanol"],
+    "product_quantity": "Single use",
+    "return_policy": "45-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Nourishing Night Cream",
+    "brand_name": "NightCare",
+    "product_image": "https://example.com/images/night-cream.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 32.99,
+    "product_stock_count": 180,
+    "product_subtitle": "Rich night cream for deep hydration and repair.",
+    "product_overview": "Our Nourishing Night Cream deeply hydrates and repairs the skin while you sleep. Infused with Shea Butter and Argan Oil, it replenishes moisture, restores elasticity, and promotes overnight renewal. Wake up to softer, smoother, and revitalized skin.",
+    "key_ingredients": ["Shea Butter", "Argan Oil"],
+    "key_ingredients_description": {
+      "Shea Butter": "Provides intense hydration and helps maintain skin's moisture balance.",
+      "Argan Oil": "Rich in antioxidants and essential fatty acids, it nourishes and repairs the skin barrier."
+    },
+    "product_usage": "Apply to clean, dry skin in the evening, gently massaging until absorbed. For best results, use after serum or toner.",
+    "skin_concerns": ["Hydration", "Repair", "Elasticity", "Overnight renewal"],
+    "ingredients": ["Water", "Butyrospermum Parkii (Shea) Butter", "Caprylic/Capric Triglyceride", "Glycerin", "Argania Spinosa (Argan) Kernel Oil", "Cetearyl Alcohol", "Glyceryl Stearate", "Stearic Acid", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "product_quantity": "50ml",
+    "return_policy": "60-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Brightening Vitamin C Serum",
+    "brand_name": "RadiantGlow",
+    "product_image": "https://example.com/images/vitamin-c-serum.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 27.99,
+    "product_stock_count": 150,
+    "product_subtitle": "Potent vitamin C serum for glowing, even-toned skin.",
+    "product_overview": "Our Brightening Vitamin C Serum is a powerful antioxidant treatment that targets dullness, uneven skin tone, and signs of aging. Enriched with Vitamin C and Ferulic Acid, it brightens the complexion, boosts collagen production, and protects against environmental damage.",
+    "key_ingredients": ["Vitamin C", "Ferulic Acid"],
+    "key_ingredients_description": {
+      "Vitamin C": "Evens out skin tone, boosts collagen production, and brightens the complexion.",
+      "Ferulic Acid": "Provides antioxidant protection, enhances the stability of Vitamin C, and reduces signs of aging."
+    },
+    "product_usage": "Apply a few drops to clean, dry skin morning and night, avoiding the eye area. Follow with moisturizer and sunscreen during the day.",
+    "skin_concerns": ["Brightening", "Even skin tone", "Anti-aging", "Environmental protection"],
+    "ingredients": ["Water", "Ascorbic Acid", "Ferulic Acid", "Glycerin", "Sodium Hyaluronate", "Hydroxyethylcellulose", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "product_quantity": "30ml",
+    "return_policy": "45-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Soothing Eye Cream",
+    "brand_name": "CalmEyes",
+    "product_image": "https://example.com/images/eye-cream.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 24.99,
+    "product_stock_count": 120,
+    "product_subtitle": "Gentle eye cream to reduce puffiness and dark circles.",
+    "product_overview": "Our Soothing Eye Cream is specially formulated to hydrate, de-puff, and brighten the delicate eye area. Enriched with Caffeine and Cucumber Extract, it reduces puffiness, diminishes dark circles, and soothes tired eyes for a refreshed appearance.",
+    "key_ingredients": ["Caffeine", "Cucumber Extract"],
+    "key_ingredients_description": {
+      "Caffeine": "Reduces puffiness and constricts blood vessels, minimizing the appearance of dark circles.",
+      "Cucumber Extract": "Soothes and hydrates the delicate skin around the eyes, reducing inflammation and puffiness."
+    },
+    "product_usage": "Gently pat a small amount around the eye area using your ring finger morning and night. Avoid direct contact with eyes.",
+    "skin_concerns": ["Puffiness", "Dark circles", "Hydration", "Soothing"],
+    "ingredients": ["Water", "Cetearyl Alcohol", "Caffeine", "Cucumis Sativus (Cucumber) Fruit Extract", "Caprylic/Capric Triglyceride", "Glycerin", "Squalane", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "product_quantity": "15ml",
+    "return_policy": "90-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Mattifying Sunscreen SPF 50",
+    "brand_name": "SunBlocker",
+    "product_image": "https://example.com/images/sunscreen.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 19.99,
+    "product_stock_count": 200,
+    "product_subtitle": "Oil-free sunscreen for shine-free protection.",
+    "product_overview": "Our Mattifying Sunscreen SPF 50 provides high-level broad-spectrum protection against UVA and UVB rays, while absorbing excess oil and preventing shine. With a lightweight, non-greasy formula, it leaves skin matte, smooth, and protected all day long.",
+    "key_ingredients": ["Zinc Oxide", "Titanium Dioxide"],
+    "key_ingredients_description": {
+      "Zinc Oxide": "Provides broad-spectrum protection against UVA and UVB rays, while soothing and calming the skin.",
+      "Titanium Dioxide": "Reflects and scatters UV radiation, providing additional sun protection without irritating the skin."
+    },
+    "product_usage": "Apply liberally to face and neck as the last step of your skincare routine, 15 minutes before sun exposure. Reapply every 2 hours or after swimming or sweating.",
+    "skin_concerns": ["Sun protection", "Oil control", "Matte finish", "Broad-spectrum"],
+    "ingredients": ["Water", "C12-15 Alkyl Benzoate", "Zinc Oxide", "Titanium Dioxide", "Butylene Glycol", "Glycerin", "Polyglyceryl-3 Polydimethylsiloxyethyl Dimethicone", "Sodium Chloride", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "product_quantity": "50ml",
+    "return_policy": "120-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Revitalizing Facial Serum",
+    "brand_name": "YouthRenew",
+    "product_image": "https://example.com/images/facial-serum.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 34.99,
+    "product_stock_count": 160,
+    "product_subtitle": "Energizing serum for youthful, radiant skin.",
+    "product_overview": "Our Revitalizing Facial Serum is a potent blend of vitamins and antioxidants that rejuvenate and brighten the complexion. Infused with Vitamin B3 and Ginseng Extract, it boosts circulation, evens out skin tone, and reduces signs of fatigue for a revitalized, radiant glow.",
+    "key_ingredients": ["Vitamin B3", "Ginseng Extract"],
+    "key_ingredients_description": {
+      "Vitamin B3": "Reduces hyperpigmentation, boosts collagen production, and strengthens the skin barrier.",
+      "Ginseng Extract": "Improves circulation, increases cell turnover, and revitalizes dull, tired-looking skin."
+    },
+    "product_usage": "Apply a few drops to clean, dry skin morning and night, gently pressing into the skin until absorbed. Follow with moisturizer.",
+    "skin_concerns": ["Revitalization", "Radiance", "Even skin tone", "Anti-fatigue"],
+    "ingredients": ["Water", "Niacinamide", "Panax Ginseng Root Extract", "Glycerin", "Butylene Glycol", "Propylene Glycol", "Sodium Hyaluronate", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "product_quantity": "30ml",
+    "return_policy": "90-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Pore-Refining Toner",
+    "brand_name": "PurePore",
+    "product_image": "https://example.com/images/toner.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 21.99,
+    "product_stock_count": 190,
+    "product_subtitle": "Clarifying toner to minimize pores and balance skin.",
+    "product_overview": "Our Pore-Refining Toner is formulated with Witch Hazel and Salicylic Acid to gently exfoliate, remove excess oil, and tighten pores. It balances the skin's pH levels, reduces inflammation, and leaves the complexion clear, smooth, and refreshed.",
+    "key_ingredients": ["Witch Hazel", "Salicylic Acid"],
+    "key_ingredients_description": {
+      "Witch Hazel": "Acts as a natural astringent, tightening pores and reducing inflammation.",
+      "Salicylic Acid": "Exfoliates inside the pores, unclogs them, and reduces acne and blackheads."
+    },
+    "product_usage": "After cleansing, apply toner to a cotton pad and gently sweep over the face and neck. Follow with serum or moisturizer.",
+    "skin_concerns": ["Pore refinement", "Oil control", "Acne prevention", "Balancing"],
+    "ingredients": ["Water", "Hamamelis Virginiana (Witch Hazel) Water", "Alcohol", "Salicylic Acid", "Glycerin", "Butylene Glycol", "Sodium Hydroxide", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "product_quantity": "150ml",
+    "return_policy": "60-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Restorative Night Oil",
+    "brand_name": "NightReplenish",
+    "product_image": "https://example.com/images/night-oil.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 38.99,
+    "product_stock_count": 140,
+    "product_subtitle": "Luxurious oil blend for overnight renewal and repair.",
+    "product_overview": "Our Restorative Night Oil is a luxurious blend of nourishing oils that deeply hydrate, repair, and rejuvenate the skin while you sleep. Infused with Rosehip Oil and Evening Primrose Oil, it restores suppleness, improves elasticity, and softens fine lines and wrinkles.",
+    "key_ingredients": ["Rosehip Oil", "Evening Primrose Oil"],
+    "key_ingredients_description": {
+      "Rosehip Oil": "Rich in vitamins and fatty acids, it hydrates, brightens, and regenerates the skin.",
+      "Evening Primrose Oil": "Contains gamma-linolenic acid (GLA) that nourishes, soothes inflammation, and promotes cell renewal."
+    },
+    "product_usage": "Warm a few drops between your palms and gently press onto clean, damp skin before bedtime. Allow the oil to absorb fully before applying additional products.",
+    "skin_concerns": ["Hydration", "Repair", "Renewal", "Anti-aging"],
+    "ingredients": ["Rosa Canina (Rosehip) Fruit Oil", "Oenothera Biennis (Evening Primrose) Oil", "Simmondsia Chinensis (Jojoba) Seed Oil", "Tocopherol", "Helianthus Annuus (Sunflower) Seed Oil", "Rosmarinus Officinalis (Rosemary) Leaf Extract"],
+    "product_quantity": "30ml",
+    "return_policy": "30-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Soothing Aloe Vera Gel",
+    "brand_name": "AloeSoothe",
+    "product_image": "https://example.com/images/aloe-vera-gel.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 17.99,
+    "product_stock_count": 180,
+    "product_subtitle": "Calming gel for irritated, sensitive skin.",
+    "product_overview": "Our Soothing Aloe Vera Gel is a lightweight, non-greasy formula that instantly calms and hydrates irritated, sensitive skin. Enriched with Aloe Vera and Chamomile Extract, it reduces redness, inflammation, and discomfort, leaving the skin soothed and refreshed.",
+    "key_ingredients": ["Aloe Vera", "Chamomile Extract"],
+    "key_ingredients_description": {
+      "Aloe Vera": "Soothes and hydrates the skin, promoting healing and reducing inflammation.",
+      "Chamomile Extract": "Anti-inflammatory and anti-irritant properties calm redness and sensitivity, promoting skin comfort."
+    },
+    "product_usage": "Apply a generous amount to clean, dry skin whenever needed. Can be used on face and body.",
+    "skin_concerns": ["Soothing", "Hydration", "Redness", "Sensitivity"],
+    "ingredients": ["Aloe Barbadensis Leaf Juice", "Glycerin", "Chamomilla Recutita (Matricaria) Flower Extract", "Carbomer", "Sodium Hydroxide", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "product_quantity": "250ml",
+    "return_policy": "45-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Rejuvenating Anti-Wrinkle Cream",
+    "brand_name": "AgelessBeauty",
+    "product_image": "https://example.com/images/anti-wrinkle-cream.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 39.99,
+    "product_stock_count": 170,
+    "product_subtitle": "Advanced cream to diminish wrinkles and restore firmness.",
+    "product_overview": "Our Rejuvenating Anti-Wrinkle Cream is a potent blend of peptides and antioxidants that targets fine lines, wrinkles, and loss of elasticity. Infused with Retinol and Coenzyme Q10, it stimulates collagen production, improves skin texture, and enhances firmness for a more youthful complexion.",
+    "key_ingredients": ["Retinol", "Coenzyme Q10"],
+    "key_ingredients_description": {
+      "Retinol": "Stimulates collagen synthesis, accelerates cell turnover, and reduces the appearance of wrinkles.",
+      "Coenzyme Q10": "Powerful antioxidant that protects against free radicals, energizes skin cells, and improves skin tone and texture."
+    },
+    "product_usage": "Apply a pea-sized amount to cleansed face and neck in the evening, avoiding the eye area. Use sunscreen during the day.",
+    "skin_concerns": ["Wrinkles", "Firmness", "Anti-aging", "Texture refinement"],
+    "ingredients": ["Water", "Glycerin", "Retinol", "Ubiquinone (Coenzyme Q10)", "Palmitoyl Tripeptide-1", "Palmitoyl Tetrapeptide-7", "Squalane", "Caprylic/Capric Triglyceride", "Stearic Acid", "Phenoxyethanol"],
+    "product_quantity": "50ml",
+    "return_policy": "60-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Hydrating Lip Balm",
+    "brand_name": "LipLove",
+    "product_image": "https://example.com/images/lip-balm.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 9.99,
+    "product_stock_count": 200,
+    "product_subtitle": "Moisturizing balm for soft, supple lips.",
+    "product_overview": "Our Hydrating Lip Balm is enriched with nourishing oils and butters to deeply moisturize and protect dry, chapped lips. Formulated with Shea Butter and Coconut Oil, it softens, smoothens, and replenishes the delicate lip skin, leaving them feeling hydrated and kissably soft.",
+    "key_ingredients": ["Shea Butter", "Coconut Oil"],
+    "key_ingredients_description": {
+      "Shea Butter": "Provides long-lasting hydration, forms a protective barrier, and restores suppleness to the lips.",
+      "Coconut Oil": "Rich in fatty acids, it locks in moisture, prevents moisture loss, and soothes dry, irritated lips."
+    },
+    "product_usage": "Apply liberally to lips as often as needed, especially in dry or cold weather.",
+    "skin_concerns": ["Hydration", "Softness", "Protection", "Chapped lips"],
+    "ingredients": ["Cocos Nucifera (Coconut) Oil", "Butyrospermum Parkii (Shea) Butter", "Beeswax", "Helianthus Annuus (Sunflower) Seed Oil", "Theobroma Cacao (Cocoa) Seed Butter", "Tocopherol", "Flavor"],
+    "product_quantity": "10g",
+    "return_policy": "30-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Calming Lavender Body Lotion",
+    "brand_name": "LavenderSoothe",
+    "product_image": "https://example.com/images/body-lotion.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 19.99,
+    "product_stock_count": 180,
+    "product_subtitle": "Relaxing lotion for hydrated, soothed skin.",
+    "product_overview": "Our Calming Lavender Body Lotion is infused with nourishing oils and extracts to deeply hydrate and soothe the skin. Enriched with Lavender Oil and Aloe Vera, it calms the senses, relieves dryness, and leaves the skin soft, smooth, and delicately scented.",
+    "key_ingredients": ["Lavender Oil", "Aloe Vera"],
+    "key_ingredients_description": {
+      "Lavender Oil": "Has calming and relaxing properties, soothes irritation, and promotes skin regeneration.",
+      "Aloe Vera": "Hydrates, nourishes, and soothes the skin, providing relief from dryness and inflammation."
+    },
+    "product_usage": "Massage onto clean, dry skin, focusing on areas prone to dryness. Use as needed, especially after bathing or showering.",
+    "skin_concerns": ["Hydration", "Soothing", "Relaxation", "Dryness"],
+    "ingredients": ["Water", "Glycerin", "Lavandula Angustifolia (Lavender) Oil", "Aloe Barbadensis Leaf Juice", "Butyrospermum Parkii (Shea) Butter", "Cetyl Alcohol", "Glyceryl Stearate", "Stearic Acid", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "product_quantity": "200ml",
+    "return_policy": "45-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Brightening Exfoliating Mask",
+    "brand_name": "GlowRevive",
+    "product_image": "https://example.com/images/exfoliating-mask.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 29.99,
+    "product_stock_count": 190,
+    "product_subtitle": "Invigorating mask for smooth, radiant skin.",
+    "product_overview": "Our Brightening Exfoliating Mask is a dual-action treatment that gently exfoliates and brightens the complexion. Formulated with Alpha Hydroxy Acids (AHAs) and Papaya Enzymes, it removes dead skin cells, unclogs pores, and reveals a brighter, more even-toned complexion.",
+    "key_ingredients": ["Alpha Hydroxy Acids (AHAs)", "Papaya Enzymes"],
+    "key_ingredients_description": {
+      "Alpha Hydroxy Acids (AHAs)": "Exfoliate the skin's surface, promote cell turnover, and diminish the appearance of fine lines and dark spots.",
+      "Papaya Enzymes": "Contains enzymes like papain that gently exfoliate, brighten, and promote cell renewal for smoother, more radiant skin."
+    },
+    "product_usage": "Apply a thin layer to clean, dry skin, avoiding the eye area. Leave on for 10-15 minutes, then rinse off with warm water. Use 2-3 times per week.",
+    "skin_concerns": ["Exfoliation", "Brightening", "Even skin tone", "Smoothness"],
+    "ingredients": ["Water", "Kaolin", "Glycolic Acid", "Lactic Acid", "Papain", "Glycerin", "Cetearyl Alcohol", "Caprylic/Capric Triglyceride", "Stearic Acid", "Phenoxyethanol"],
+    "product_quantity": "100ml",
+    "return_policy": "60-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Hydrating Facial Mist",
+    "brand_name": "Mistify",
+    "product_image": "https://example.com/images/facial-mist.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 14.99,
+    "product_stock_count": 220,
+    "product_subtitle": "Refreshing mist for instant hydration and glow.",
+    "product_overview": "Our Hydrating Facial Mist is infused with botanical extracts and humectants to instantly refresh and revitalize dull, dehydrated skin. Formulated with Rose Water and Hyaluronic Acid, it boosts moisture levels, soothes irritation, and leaves the complexion radiant and dewy.",
+    "key_ingredients": ["Rose Water", "Hyaluronic Acid"],
+    "key_ingredients_description": {
+      "Rose Water": "Hydrates, tones, and balances the skin's pH, while imparting a subtle floral scent.",
+      "Hyaluronic Acid": "Attracts and retains moisture in the skin, plumping and smoothing fine lines and wrinkles."
+    },
+    "product_usage": "Close eyes and mist onto face and neck whenever skin feels dry or in need of refreshment. Can be used before or after makeup.",
+    "skin_concerns": ["Hydration", "Refreshment", "Radiance", "Soothing"],
+    "ingredients": ["Rosa Damascena (Rose) Flower Water", "Water", "Glycerin", "Sodium Hyaluronate", "Hamamelis Virginiana (Witch Hazel) Extract", "Panthenol", "Aloe Barbadensis Leaf Juice", "Citrus Aurantium Dulcis (Orange) Peel Oil", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "product_quantity": "100ml",
+    "return_policy": "30-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Clarifying Charcoal Mask",
+    "brand_name": "CharcoalCleanse",
+    "product_image": "https://example.com/images/charcoal-mask.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 19.99,
+    "product_stock_count": 190,
+    "product_subtitle": "Purifying mask to detoxify and refine pores.",
+    "product_overview": "Our Clarifying Charcoal Mask is a detoxifying treatment that draws out impurities, excess oil, and toxins from the skin. Enriched with Activated Charcoal and Kaolin Clay, it absorbs excess sebum, unclogs pores, and promotes a clearer, more balanced complexion.",
+    "key_ingredients": ["Activated Charcoal", "Kaolin Clay"],
+    "key_ingredients_description": {
+      "Activated Charcoal": "Acts like a magnet to absorb dirt, oil, and impurities from the skin's surface, detoxifying and purifying.",
+      "Kaolin Clay": "Gently exfoliates and absorbs excess oil, impurities, and toxins, leaving the skin clean, clear, and mattified."
+    },
+    "product_usage": "Apply an even layer to clean, dry skin, avoiding the eye area. Leave on for 10-15 minutes, then rinse off with warm water. Use 2-3 times per week.",
+    "skin_concerns": ["Purification", "Detoxification", "Pore refinement", "Oil control"],
+    "ingredients": ["Water", "Kaolin", "Glycerin", "Charcoal Powder", "Bentonite", "Cetearyl Alcohol", "Glyceryl Stearate", "Stearic Acid", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "product_quantity": "75ml",
+    "return_policy": "60-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Repairing Hand Cream",
+    "brand_name": "HandHeal",
+    "product_image": "https://example.com/images/hand-cream.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 12.99,
+    "product_stock_count": 180,
+    "product_subtitle": "Nourishing cream for soft, smooth hands.",
+    "product_overview": "Our Repairing Hand Cream is enriched with emollients and vitamins to deeply nourish and repair dry, rough hands. Formulated with Shea Butter and Vitamin E, it restores moisture, soothes irritation, and protects against environmental damage, leaving hands velvety soft and supple.",
+    "key_ingredients": ["Shea Butter", "Vitamin E"],
+    "key_ingredients_description": {
+      "Shea Butter": "Forms a protective barrier, locks in moisture, and nourishes the skin, promoting softness and elasticity.",
+      "Vitamin E": "Provides antioxidant protection, repairs damaged skin cells, and prevents premature aging."
+    },
+    "product_usage": "Massage a small amount onto clean, dry hands whenever needed, paying special attention to dry or rough areas.",
+    "skin_concerns": ["Hydration", "Repair", "Protection", "Softness"],
+    "ingredients": ["Water", "Butyrospermum Parkii (Shea) Butter", "Glycerin", "Cetearyl Alcohol", "Glyceryl Stearate", "Tocopheryl Acetate", "Panthenol", "Dimethicone", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "product_quantity": "100ml",
+    "return_policy": "45-day satisfaction guarantee."
+  },
+  {
+    "product_name": "Refreshing Eye Gel",
+    "brand_name": "EyeRevive",
+    "product_image": "https://example.com/images/eye-gel.jpg",
+    "reviews": [
+      {
+        "user": "Customer123",
+        "rating": 5,
+        "comment": "This serum worked wonders for my dry skin!"
+      },
+      {
+        "user": "BeautyQueen",
+        "rating": 4.5,
+        "comment": "Great product, but a bit pricey."
+      }
+    ],
+    "product_price": 16.99,
+    "product_stock_count": 200,
+    "product_subtitle": "Revitalizing gel for tired, puffy eyes.",
+    "product_overview": "Our Refreshing Eye Gel is a lightweight, cooling formula that targets puffiness, dark circles, and signs of fatigue around the eyes. Infused with Caffeine and Green Tea Extract, it stimulates circulation, reduces fluid retention, and brightens the under-eye area for a refreshed, awakened look.",
+    "key_ingredients": ["Caffeine", "Green Tea Extract"],
+    "key_ingredients_description": {
+      "Caffeine": "Constricts blood vessels, reduces puffiness, and diminishes the appearance of dark circles.",
+      "Green Tea Extract": "Contains antioxidants and anti-inflammatory properties that soothe, depuff, and brighten the delicate eye area."
+    },
+    "product_usage": "Gently pat a small amount around the eye area using your ring finger morning and night. For an extra cooling effect, store in the refrigerator.",
+    "skin_concerns": ["Puffiness", "Dark circles", "Fatigue", "Refreshment"],
+    "ingredients": ["Water", "Glycerin", "Caffeine", "Camellia Sinensis (Green Tea) Leaf Extract", "Sodium Hyaluronate", "Aloe Barbadensis Leaf Juice", "Hamamelis Virginiana (Witch Hazel) Extract", "Xanthan Gum", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "product_quantity": "15ml",
+    "return_policy": "30-day satisfaction guarantee."
+  }
+]
+
