@@ -1,11 +1,42 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "./Login.css";
 import SocialLogin from "../../../SharedComponents/SocialLogin/SocialLogin";
+import useAuth from "../../../hooks/useAuth";
+import Swal from "sweetalert2";
 
 const Login = () => {
-  const handleLogin = () => {
-    console.log("Event Triggered");
-  };
+
+  const {signIn} = useAuth()
+
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const from = location.state?.from?.pathname || "/";
+
+ console.log(from)
+
+  const handleLogin = e =>{
+      e.preventDefault();
+      const form = e.target;
+      const email = form.email.value;
+      const password = form.password.value;
+      console.log(email, password);
+      signIn(email, password)
+      .then(result => {
+          const user = result.user;
+          console.log(user);
+          Swal.fire({
+              title: 'Login Successful.',
+              showClass: {
+                  popup: 'animate__animated animate__fadeInDown'
+              },
+              hideClass: {
+                  popup: 'animate__animated animate__fadeOutUp'
+              }
+          });
+          navigate(from, { replace: true });
+      })
+  }
 
   return (
     <div className="w-fit mx-auto my-16 lato_font">
