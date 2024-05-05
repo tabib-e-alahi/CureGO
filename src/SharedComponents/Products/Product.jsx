@@ -5,14 +5,9 @@ import { Link } from "react-router-dom";
 const Product = ({ product }) => {
   // console.log(product);
   const {
-    id,
+    _id,
     product_image,
     product_name,
-    // brand,
-    // category,
-    // description,
-    // ingredients,
-    // skinConcerns,
     product_price,
     reviews,
   } = product;
@@ -26,7 +21,7 @@ const Product = ({ product }) => {
 
   return (
     <div className="card_style  text-center rounded-sm pb-2">
-      <Link to={`/product/${id}`}>
+      <Link to={`/products/${_id}`}>
         <div className=" h-80 flex items-center bg-[#edecec]  image-zoomer">
           <img className="w-60 h-60 mx-auto " src={product_image} alt="" />
         </div>
