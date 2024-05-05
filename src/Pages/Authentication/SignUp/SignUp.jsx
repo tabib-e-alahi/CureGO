@@ -16,60 +16,82 @@ const SignUp = () => {
   };
 
   return (
-    <div className="mx-auto w-2/3 my-10  bg-white p-10">
+    <div className="mx-auto w-7/12 my-10  bg-white p-10">
       <SocialLogin></SocialLogin>
       <form
         onSubmit={handleSubmit(onSubmit)}
         className="grid grid-cols-2 gap-10 "
       >
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-8">
+          {/* ------------------------- name field --------------------------------- */}
           <div className="flex flex-col gap-1">
-            <label htmlFor="" className="pb-1 text-black text-sm custome_font_family">
-              Your name
+            <label
+              htmlFor=""
+              className="pb-1 text-black   font-medium custome_font_family"
+            >
+              Full Name
             </label>
             <input
               {...register("name", { required: true })}
               type="text"
               className="p-3  form-input"
-              placeholder="Tabib E Alahi"
+              placeholder=""
             />
             {errors.name && (
-              <span className="text-red-500">This field is required</span>
+              <span className="text-red-500 text-sm">
+                Full Name field is required
+              </span>
             )}
           </div>
+
+          {/* ------------------------- email field --------------------------------- */}
           <div className="flex flex-col gap-1">
-            <label htmlFor="" className="pb-1 text-black text-sm custome_font_family">
-              Photo URL
-            </label>
-            <input
-              {...register("photoURL", { required: true })}
-              type="text"
-              className="p-3  form-input"
-              placeholder="url...."
-            />
-            {errors.photoURL && (
-              <span className="text-red-500">This field is required</span>
-            )}
-          </div>
-          <div className="flex flex-col gap-1">
-            <label htmlFor="" className="pb-1 text-black text-sm custome_font_family">
-              Enter Email
+            <label
+              htmlFor=""
+              className="pb-1 text-black font-medium custome_font_family"
+            >
+              Email Address
             </label>
             <input
               {...register("email", { required: true })}
               type="email"
               className="p-3  form-input"
-              placeholder="example@example.com"
+              placeholder=""
             />
             {errors.email && (
-              <span className="text-red-500">This field is required</span>
+              <span className="text-red-500 text-sm">
+                Emnail Address field is required
+              </span>
             )}
           </div>
-        </div>
-        <div>
+
+          {/* ------------------------- confirm email field --------------------------------- */}
           <div className="flex flex-col gap-1">
-            <label htmlFor="" className="pb-1 text-black text-sm custome_font_family">
-              Enter Password
+            <label
+              htmlFor=""
+              className="pb-1 text-black font-medium custome_font_family"
+            >
+              Confirm Email Address
+            </label>
+            <input
+              {...register("confirmEmail", { required: true })}
+              type="email"
+              className="p-3  form-input"
+              placeholder=""
+            />
+            {errors.confirmEmail && (
+              <span className="text-red-500 text-sm">
+                Confirm your email address
+              </span>
+            )}
+          </div>
+          {/* ------------------------- password field --------------------------------- */}
+          <div className="flex flex-col gap-1">
+            <label
+              htmlFor=""
+              className="pb-1 text-black font-medium custome_font_family"
+            >
+              Password
             </label>
             <input
               {...register("password", {
@@ -78,23 +100,62 @@ const SignUp = () => {
               })}
               type="password"
               className="p-3 rounded-lg form-input"
-              placeholder="password@123"
+              placeholder=""
             />
             {errors.password?.type === "required" && (
-              <p role="alert" className="text-red-500">
+              <p role="alert" className="text-red-500 text-sm">
                 Password is required
               </p>
             )}
             {errors.password?.type === "minLength" && (
-              <p role="alert" className="text-red-500">
+              <p role="alert" className="text-red-500 text-sm">
                 Password must be 6 characters minimum
               </p>
             )}
           </div>
-          <div className="w-2/3 mt-4 mx-auto text-center">
-            <button className="px-6 py-2  rounded-md text-white w-full bg-[#52ab98]">
-              Register
+        </div>
+        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-1">
+            <label
+              htmlFor=""
+              className="pb-1 text-black font-medium custome_font_family"
+            >
+              Phone Number
+            </label>
+            <input
+              {...register("phoneNo", { minLength: 11, maxLength: 11, min: 1 })}
+              type="text"
+              className="p-3  form-input"
+              placeholder="01XXXXXXXXX"
+            />
+            {errors.phoneNo && (
+              <span className="text-red-500 text-sm">
+                Please enter a valid phone number
+              </span>
+            )}
+          </div>
+          <div className="flex flex-col gap-1">
+            <label
+              htmlFor=""
+              className="pb-1 text-black font-medium custome_font_family"
+            >
+              Referral Code(Optional)
+            </label>
+            <input
+              {...register("referralCode")}
+              type="text"
+              className="p-3  form-input"
+              placeholder=""
+            />
+            <p className="text-sm text-gray-600">*Your referrals discount is automatically applied a cart</p>
+          </div>
+          
+          <div className="w-10/12  mx-auto text-center">
+            <button className="px-6 py-3 text-lg  rounded-sm text-white w-full uppercase bg-[#a6776a]">
+              Sign Up
             </button>
+            
+            <p className="text-sm text-left">By clicking “SIGN UP”, I agree to CureCo&apos;s <a href="" className="text-blue-600">Terms of Use</a> and <a className="text-blue-600" href="http://">Privacy Policy</a></p>
           </div>
         </div>
       </form>
