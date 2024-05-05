@@ -1,5 +1,3 @@
-
-
 [
   {
     "product_name": "Hydrating Facial Moisturizer",
@@ -27,8 +25,24 @@
       "Vitamin E": "Provides antioxidant protection and helps maintain skin's natural moisture barrier."
     },
     "product_usage": "Apply a small amount to clean, dry skin morning and night, massaging gently until absorbed.",
-    "skin_concerns": ["Hydration", "Radiance", "Elasticity", "Protection against environmental damage"],
-    "ingredients": ["Water", "Glycerin", "Hyaluronic Acid", "Vitamin E", "Shea Butter", "Cetearyl Alcohol", "Caprylic/Capric Triglyceride", "Glyceryl Stearate", "Stearic Acid", "Phenoxyethanol"],
+    "skin_concerns": [
+      "Hydration",
+      "Radiance",
+      "Elasticity",
+      "Protection against environmental damage"
+    ],
+    "ingredients": [
+      "Water",
+      "Glycerin",
+      "Hyaluronic Acid",
+      "Vitamin E",
+      "Shea Butter",
+      "Cetearyl Alcohol",
+      "Caprylic/Capric Triglyceride",
+      "Glyceryl Stearate",
+      "Stearic Acid",
+      "Phenoxyethanol"
+    ],
     "product_quantity": "50ml",
     "return_policy": "30-day satisfaction guarantee."
   },
@@ -59,7 +73,18 @@
     },
     "product_usage": "Apply a small amount to wet skin, massage gently in circular motions, then rinse thoroughly with water. Use morning and night.",
     "skin_concerns": ["Cleansing", "Balance", "Soothing", "Acne"],
-    "ingredients": ["Water", "Sodium Lauroyl Sarcosinate", "Cocamidopropyl Betaine", "Glycerin", "Aloe Barbadensis Leaf Juice", "Camellia Sinensis Leaf Extract", "Coco-Glucoside", "Glyceryl Oleate", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "ingredients": [
+      "Water",
+      "Sodium Lauroyl Sarcosinate",
+      "Cocamidopropyl Betaine",
+      "Glycerin",
+      "Aloe Barbadensis Leaf Juice",
+      "Camellia Sinensis Leaf Extract",
+      "Coco-Glucoside",
+      "Glyceryl Oleate",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
     "product_quantity": "150ml",
     "return_policy": "60-day satisfaction guarantee."
   },
@@ -90,7 +115,18 @@
     },
     "product_usage": "Apply to damp skin, massage gently in circular motions, then rinse thoroughly with water. Use 2-3 times per week.",
     "skin_concerns": ["Exfoliation", "Smoothness", "Radiance", "Texture"],
-    "ingredients": ["Water", "Glycerin", "Apricot Kernel Powder", "Cetearyl Alcohol", "Jojoba Esters", "Glyceryl Stearate", "Caprylic/Capric Triglyceride", "Stearic Acid", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "ingredients": [
+      "Water",
+      "Glycerin",
+      "Apricot Kernel Powder",
+      "Cetearyl Alcohol",
+      "Jojoba Esters",
+      "Glyceryl Stearate",
+      "Caprylic/Capric Triglyceride",
+      "Stearic Acid",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
     "product_quantity": "100ml",
     "return_policy": "90-day satisfaction guarantee."
   },
@@ -121,7 +157,18 @@
     },
     "product_usage": "Unfold the mask and apply to clean, dry skin. Leave on for 15-20 minutes, then remove and massage any excess serum into the skin. Use 1-2 times per week.",
     "skin_concerns": ["Hydration", "Radiance", "Plumping", "Even skin tone"],
-    "ingredients": ["Water", "Glycerin", "Butylene Glycol", "Sodium Hyaluronate", "Ascorbic Acid", "Tocopheryl Acetate", "Panthenol", "Allantoin", "Xanthan Gum", "Phenoxyethanol"],
+    "ingredients": [
+      "Water",
+      "Glycerin",
+      "Butylene Glycol",
+      "Sodium Hyaluronate",
+      "Ascorbic Acid",
+      "Tocopheryl Acetate",
+      "Panthenol",
+      "Allantoin",
+      "Xanthan Gum",
+      "Phenoxyethanol"
+    ],
     "product_quantity": "Single use",
     "return_policy": "45-day satisfaction guarantee."
   },
@@ -152,7 +199,18 @@
     },
     "product_usage": "Apply to clean, dry skin in the evening, gently massaging until absorbed. For best results, use after serum or toner.",
     "skin_concerns": ["Hydration", "Repair", "Elasticity", "Overnight renewal"],
-    "ingredients": ["Water", "Butyrospermum Parkii (Shea) Butter", "Caprylic/Capric Triglyceride", "Glycerin", "Argania Spinosa (Argan) Kernel Oil", "Cetearyl Alcohol", "Glyceryl Stearate", "Stearic Acid", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "ingredients": [
+      "Water",
+      "Butyrospermum Parkii (Shea) Butter",
+      "Caprylic/Capric Triglyceride",
+      "Glycerin",
+      "Argania Spinosa (Argan) Kernel Oil",
+      "Cetearyl Alcohol",
+      "Glyceryl Stearate",
+      "Stearic Acid",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
     "product_quantity": "50ml",
     "return_policy": "60-day satisfaction guarantee."
   },
@@ -182,8 +240,22 @@
       "Ferulic Acid": "Provides antioxidant protection, enhances the stability of Vitamin C, and reduces signs of aging."
     },
     "product_usage": "Apply a few drops to clean, dry skin morning and night, avoiding the eye area. Follow with moisturizer and sunscreen during the day.",
-    "skin_concerns": ["Brightening", "Even skin tone", "Anti-aging", "Environmental protection"],
-    "ingredients": ["Water", "Ascorbic Acid", "Ferulic Acid", "Glycerin", "Sodium Hyaluronate", "Hydroxyethylcellulose", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "skin_concerns": [
+      "Brightening",
+      "Even skin tone",
+      "Anti-aging",
+      "Environmental protection"
+    ],
+    "ingredients": [
+      "Water",
+      "Ascorbic Acid",
+      "Ferulic Acid",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Hydroxyethylcellulose",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
     "product_quantity": "30ml",
     "return_policy": "45-day satisfaction guarantee."
   },
@@ -214,7 +286,17 @@
     },
     "product_usage": "Gently pat a small amount around the eye area using your ring finger morning and night. Avoid direct contact with eyes.",
     "skin_concerns": ["Puffiness", "Dark circles", "Hydration", "Soothing"],
-    "ingredients": ["Water", "Cetearyl Alcohol", "Caffeine", "Cucumis Sativus (Cucumber) Fruit Extract", "Caprylic/Capric Triglyceride", "Glycerin", "Squalane", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "ingredients": [
+      "Water",
+      "Cetearyl Alcohol",
+      "Caffeine",
+      "Cucumis Sativus (Cucumber) Fruit Extract",
+      "Caprylic/Capric Triglyceride",
+      "Glycerin",
+      "Squalane",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
     "product_quantity": "15ml",
     "return_policy": "90-day satisfaction guarantee."
   },
@@ -244,8 +326,24 @@
       "Titanium Dioxide": "Reflects and scatters UV radiation, providing additional sun protection without irritating the skin."
     },
     "product_usage": "Apply liberally to face and neck as the last step of your skincare routine, 15 minutes before sun exposure. Reapply every 2 hours or after swimming or sweating.",
-    "skin_concerns": ["Sun protection", "Oil control", "Matte finish", "Broad-spectrum"],
-    "ingredients": ["Water", "C12-15 Alkyl Benzoate", "Zinc Oxide", "Titanium Dioxide", "Butylene Glycol", "Glycerin", "Polyglyceryl-3 Polydimethylsiloxyethyl Dimethicone", "Sodium Chloride", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "skin_concerns": [
+      "Sun protection",
+      "Oil control",
+      "Matte finish",
+      "Broad-spectrum"
+    ],
+    "ingredients": [
+      "Water",
+      "C12-15 Alkyl Benzoate",
+      "Zinc Oxide",
+      "Titanium Dioxide",
+      "Butylene Glycol",
+      "Glycerin",
+      "Polyglyceryl-3 Polydimethylsiloxyethyl Dimethicone",
+      "Sodium Chloride",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
     "product_quantity": "50ml",
     "return_policy": "120-day satisfaction guarantee."
   },
@@ -275,8 +373,23 @@
       "Ginseng Extract": "Improves circulation, increases cell turnover, and revitalizes dull, tired-looking skin."
     },
     "product_usage": "Apply a few drops to clean, dry skin morning and night, gently pressing into the skin until absorbed. Follow with moisturizer.",
-    "skin_concerns": ["Revitalization", "Radiance", "Even skin tone", "Anti-fatigue"],
-    "ingredients": ["Water", "Niacinamide", "Panax Ginseng Root Extract", "Glycerin", "Butylene Glycol", "Propylene Glycol", "Sodium Hyaluronate", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "skin_concerns": [
+      "Revitalization",
+      "Radiance",
+      "Even skin tone",
+      "Anti-fatigue"
+    ],
+    "ingredients": [
+      "Water",
+      "Niacinamide",
+      "Panax Ginseng Root Extract",
+      "Glycerin",
+      "Butylene Glycol",
+      "Propylene Glycol",
+      "Sodium Hyaluronate",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
     "product_quantity": "30ml",
     "return_policy": "90-day satisfaction guarantee."
   },
@@ -306,8 +419,23 @@
       "Salicylic Acid": "Exfoliates inside the pores, unclogs them, and reduces acne and blackheads."
     },
     "product_usage": "After cleansing, apply toner to a cotton pad and gently sweep over the face and neck. Follow with serum or moisturizer.",
-    "skin_concerns": ["Pore refinement", "Oil control", "Acne prevention", "Balancing"],
-    "ingredients": ["Water", "Hamamelis Virginiana (Witch Hazel) Water", "Alcohol", "Salicylic Acid", "Glycerin", "Butylene Glycol", "Sodium Hydroxide", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "skin_concerns": [
+      "Pore refinement",
+      "Oil control",
+      "Acne prevention",
+      "Balancing"
+    ],
+    "ingredients": [
+      "Water",
+      "Hamamelis Virginiana (Witch Hazel) Water",
+      "Alcohol",
+      "Salicylic Acid",
+      "Glycerin",
+      "Butylene Glycol",
+      "Sodium Hydroxide",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
     "product_quantity": "150ml",
     "return_policy": "60-day satisfaction guarantee."
   },
@@ -338,7 +466,14 @@
     },
     "product_usage": "Warm a few drops between your palms and gently press onto clean, damp skin before bedtime. Allow the oil to absorb fully before applying additional products.",
     "skin_concerns": ["Hydration", "Repair", "Renewal", "Anti-aging"],
-    "ingredients": ["Rosa Canina (Rosehip) Fruit Oil", "Oenothera Biennis (Evening Primrose) Oil", "Simmondsia Chinensis (Jojoba) Seed Oil", "Tocopherol", "Helianthus Annuus (Sunflower) Seed Oil", "Rosmarinus Officinalis (Rosemary) Leaf Extract"],
+    "ingredients": [
+      "Rosa Canina (Rosehip) Fruit Oil",
+      "Oenothera Biennis (Evening Primrose) Oil",
+      "Simmondsia Chinensis (Jojoba) Seed Oil",
+      "Tocopherol",
+      "Helianthus Annuus (Sunflower) Seed Oil",
+      "Rosmarinus Officinalis (Rosemary) Leaf Extract"
+    ],
     "product_quantity": "30ml",
     "return_policy": "30-day satisfaction guarantee."
   },
@@ -369,7 +504,15 @@
     },
     "product_usage": "Apply a generous amount to clean, dry skin whenever needed. Can be used on face and body.",
     "skin_concerns": ["Soothing", "Hydration", "Redness", "Sensitivity"],
-    "ingredients": ["Aloe Barbadensis Leaf Juice", "Glycerin", "Chamomilla Recutita (Matricaria) Flower Extract", "Carbomer", "Sodium Hydroxide", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "ingredients": [
+      "Aloe Barbadensis Leaf Juice",
+      "Glycerin",
+      "Chamomilla Recutita (Matricaria) Flower Extract",
+      "Carbomer",
+      "Sodium Hydroxide",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
     "product_quantity": "250ml",
     "return_policy": "45-day satisfaction guarantee."
   },
@@ -399,8 +542,24 @@
       "Coenzyme Q10": "Powerful antioxidant that protects against free radicals, energizes skin cells, and improves skin tone and texture."
     },
     "product_usage": "Apply a pea-sized amount to cleansed face and neck in the evening, avoiding the eye area. Use sunscreen during the day.",
-    "skin_concerns": ["Wrinkles", "Firmness", "Anti-aging", "Texture refinement"],
-    "ingredients": ["Water", "Glycerin", "Retinol", "Ubiquinone (Coenzyme Q10)", "Palmitoyl Tripeptide-1", "Palmitoyl Tetrapeptide-7", "Squalane", "Caprylic/Capric Triglyceride", "Stearic Acid", "Phenoxyethanol"],
+    "skin_concerns": [
+      "Wrinkles",
+      "Firmness",
+      "Anti-aging",
+      "Texture refinement"
+    ],
+    "ingredients": [
+      "Water",
+      "Glycerin",
+      "Retinol",
+      "Ubiquinone (Coenzyme Q10)",
+      "Palmitoyl Tripeptide-1",
+      "Palmitoyl Tetrapeptide-7",
+      "Squalane",
+      "Caprylic/Capric Triglyceride",
+      "Stearic Acid",
+      "Phenoxyethanol"
+    ],
     "product_quantity": "50ml",
     "return_policy": "60-day satisfaction guarantee."
   },
@@ -431,7 +590,15 @@
     },
     "product_usage": "Apply liberally to lips as often as needed, especially in dry or cold weather.",
     "skin_concerns": ["Hydration", "Softness", "Protection", "Chapped lips"],
-    "ingredients": ["Cocos Nucifera (Coconut) Oil", "Butyrospermum Parkii (Shea) Butter", "Beeswax", "Helianthus Annuus (Sunflower) Seed Oil", "Theobroma Cacao (Cocoa) Seed Butter", "Tocopherol", "Flavor"],
+    "ingredients": [
+      "Cocos Nucifera (Coconut) Oil",
+      "Butyrospermum Parkii (Shea) Butter",
+      "Beeswax",
+      "Helianthus Annuus (Sunflower) Seed Oil",
+      "Theobroma Cacao (Cocoa) Seed Butter",
+      "Tocopherol",
+      "Flavor"
+    ],
     "product_quantity": "10g",
     "return_policy": "30-day satisfaction guarantee."
   },
@@ -462,7 +629,18 @@
     },
     "product_usage": "Massage onto clean, dry skin, focusing on areas prone to dryness. Use as needed, especially after bathing or showering.",
     "skin_concerns": ["Hydration", "Soothing", "Relaxation", "Dryness"],
-    "ingredients": ["Water", "Glycerin", "Lavandula Angustifolia (Lavender) Oil", "Aloe Barbadensis Leaf Juice", "Butyrospermum Parkii (Shea) Butter", "Cetyl Alcohol", "Glyceryl Stearate", "Stearic Acid", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "ingredients": [
+      "Water",
+      "Glycerin",
+      "Lavandula Angustifolia (Lavender) Oil",
+      "Aloe Barbadensis Leaf Juice",
+      "Butyrospermum Parkii (Shea) Butter",
+      "Cetyl Alcohol",
+      "Glyceryl Stearate",
+      "Stearic Acid",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
     "product_quantity": "200ml",
     "return_policy": "45-day satisfaction guarantee."
   },
@@ -492,8 +670,24 @@
       "Papaya Enzymes": "Contains enzymes like papain that gently exfoliate, brighten, and promote cell renewal for smoother, more radiant skin."
     },
     "product_usage": "Apply a thin layer to clean, dry skin, avoiding the eye area. Leave on for 10-15 minutes, then rinse off with warm water. Use 2-3 times per week.",
-    "skin_concerns": ["Exfoliation", "Brightening", "Even skin tone", "Smoothness"],
-    "ingredients": ["Water", "Kaolin", "Glycolic Acid", "Lactic Acid", "Papain", "Glycerin", "Cetearyl Alcohol", "Caprylic/Capric Triglyceride", "Stearic Acid", "Phenoxyethanol"],
+    "skin_concerns": [
+      "Exfoliation",
+      "Brightening",
+      "Even skin tone",
+      "Smoothness"
+    ],
+    "ingredients": [
+      "Water",
+      "Kaolin",
+      "Glycolic Acid",
+      "Lactic Acid",
+      "Papain",
+      "Glycerin",
+      "Cetearyl Alcohol",
+      "Caprylic/Capric Triglyceride",
+      "Stearic Acid",
+      "Phenoxyethanol"
+    ],
     "product_quantity": "100ml",
     "return_policy": "60-day satisfaction guarantee."
   },
@@ -524,7 +718,18 @@
     },
     "product_usage": "Close eyes and mist onto face and neck whenever skin feels dry or in need of refreshment. Can be used before or after makeup.",
     "skin_concerns": ["Hydration", "Refreshment", "Radiance", "Soothing"],
-    "ingredients": ["Rosa Damascena (Rose) Flower Water", "Water", "Glycerin", "Sodium Hyaluronate", "Hamamelis Virginiana (Witch Hazel) Extract", "Panthenol", "Aloe Barbadensis Leaf Juice", "Citrus Aurantium Dulcis (Orange) Peel Oil", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "ingredients": [
+      "Rosa Damascena (Rose) Flower Water",
+      "Water",
+      "Glycerin",
+      "Sodium Hyaluronate",
+      "Hamamelis Virginiana (Witch Hazel) Extract",
+      "Panthenol",
+      "Aloe Barbadensis Leaf Juice",
+      "Citrus Aurantium Dulcis (Orange) Peel Oil",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
     "product_quantity": "100ml",
     "return_policy": "30-day satisfaction guarantee."
   },
@@ -554,8 +759,24 @@
       "Kaolin Clay": "Gently exfoliates and absorbs excess oil, impurities, and toxins, leaving the skin clean, clear, and mattified."
     },
     "product_usage": "Apply an even layer to clean, dry skin, avoiding the eye area. Leave on for 10-15 minutes, then rinse off with warm water. Use 2-3 times per week.",
-    "skin_concerns": ["Purification", "Detoxification", "Pore refinement", "Oil control"],
-    "ingredients": ["Water", "Kaolin", "Glycerin", "Charcoal Powder", "Bentonite", "Cetearyl Alcohol", "Glyceryl Stearate", "Stearic Acid", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "skin_concerns": [
+      "Purification",
+      "Detoxification",
+      "Pore refinement",
+      "Oil control"
+    ],
+    "ingredients": [
+      "Water",
+      "Kaolin",
+      "Glycerin",
+      "Charcoal Powder",
+      "Bentonite",
+      "Cetearyl Alcohol",
+      "Glyceryl Stearate",
+      "Stearic Acid",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
     "product_quantity": "75ml",
     "return_policy": "60-day satisfaction guarantee."
   },
@@ -586,7 +807,18 @@
     },
     "product_usage": "Massage a small amount onto clean, dry hands whenever needed, paying special attention to dry or rough areas.",
     "skin_concerns": ["Hydration", "Repair", "Protection", "Softness"],
-    "ingredients": ["Water", "Butyrospermum Parkii (Shea) Butter", "Glycerin", "Cetearyl Alcohol", "Glyceryl Stearate", "Tocopheryl Acetate", "Panthenol", "Dimethicone", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "ingredients": [
+      "Water",
+      "Butyrospermum Parkii (Shea) Butter",
+      "Glycerin",
+      "Cetearyl Alcohol",
+      "Glyceryl Stearate",
+      "Tocopheryl Acetate",
+      "Panthenol",
+      "Dimethicone",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
     "product_quantity": "100ml",
     "return_policy": "45-day satisfaction guarantee."
   },
@@ -617,11 +849,19 @@
     },
     "product_usage": "Gently pat a small amount around the eye area using your ring finger morning and night. For an extra cooling effect, store in the refrigerator.",
     "skin_concerns": ["Puffiness", "Dark circles", "Fatigue", "Refreshment"],
-    "ingredients": ["Water", "Glycerin", "Caffeine", "Camellia Sinensis (Green Tea) Leaf Extract", "Sodium Hyaluronate", "Aloe Barbadensis Leaf Juice", "Hamamelis Virginiana (Witch Hazel) Extract", "Xanthan Gum", "Phenoxyethanol", "Ethylhexylglycerin"],
+    "ingredients": [
+      "Water",
+      "Glycerin",
+      "Caffeine",
+      "Camellia Sinensis (Green Tea) Leaf Extract",
+      "Sodium Hyaluronate",
+      "Aloe Barbadensis Leaf Juice",
+      "Hamamelis Virginiana (Witch Hazel) Extract",
+      "Xanthan Gum",
+      "Phenoxyethanol",
+      "Ethylhexylglycerin"
+    ],
     "product_quantity": "15ml",
     "return_policy": "30-day satisfaction guarantee."
   }
 ]
-
-
-
