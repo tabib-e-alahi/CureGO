@@ -2,6 +2,7 @@
 import SocialLogin from "../../../SharedComponents/SocialLogin/SocialLogin";
 import { useForm } from "react-hook-form";
 import "./SignUp.css";
+import { Link } from "react-router-dom";
 
 const SignUp = () => {
   const {
@@ -16,7 +17,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="mx-auto w-7/12 my-10  bg-white p-10">
+    <div className="mx-auto w-7/12 my-16  bg-[#f6f4f1] p-10">
       <SocialLogin></SocialLogin>
       <form
         onSubmit={handleSubmit(onSubmit)}
@@ -156,6 +157,13 @@ const SignUp = () => {
             </button>
             
             <p className="text-sm text-left">By clicking “SIGN UP”, I agree to CureCo&apos;s <a href="" className="text-blue-600">Terms of Use</a> and <a className="text-blue-600" href="http://">Privacy Policy</a></p>
+          </div>
+
+          <div className="flex justify-center items-center gap-1">
+            <p className="font-normal text-gray-600">Already have an account?</p>
+            <Link to="/login">
+              <button className="btn btn-link pl-0">Login</button>
+            </Link>
           </div>
         </div>
       </form>
