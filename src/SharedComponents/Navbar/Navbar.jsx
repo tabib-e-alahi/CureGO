@@ -5,7 +5,12 @@ import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 
 const Navbar = () => {
-  const { user } = useAuth();
+  const { user, logOut } = useAuth();
+
+  const handleSignOut = () => {
+    logOut();
+  };
+
   console.log(user);
   const navLinks = (
     <>
@@ -83,13 +88,21 @@ const Navbar = () => {
               </button>
               <ul
                 tabIndex={0}
-                className="menu dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 mt-4"
+                className="menu dropdown-content z-[2] p-4 shadow bg-base-100 rounded-sm w-52 mt-4"
               >
                 <li>
-                  <a>Item 1</a>
+                  <a>MY Account</a>
                 </li>
                 <li>
-                  <a>Item 2</a>
+                  <a>My Cart</a>
+                </li>
+                <li className="mt-2">
+                  <button
+                    className="bg-[#A6776A] text-center w-fit mx-auto text-white uppercase"
+                    onClick={handleSignOut}
+                  >
+                    Sign Out
+                  </button>
                 </li>
               </ul>
             </div>
