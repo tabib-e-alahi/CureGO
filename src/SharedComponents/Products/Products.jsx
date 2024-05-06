@@ -18,7 +18,7 @@ const Products = () => {
   return (
     <>
     {
-      loading ? <div className="loader my-40 mx-auto"></div> 
+      loading ? <div className="loader my-44 mx-auto"></div> 
       :
       <div className="my-10 w-11/12 mx-auto pt-10">
       

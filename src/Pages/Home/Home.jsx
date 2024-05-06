@@ -1,5 +1,6 @@
 import AdCare from "../../SharedComponents/Advertisement/AdCare";
 import Banner from "../../SharedComponents/Banner/Banner";
+import NewsLetter from "../../SharedComponents/NewsLetter/NewsLetter";
 import Products from "../../SharedComponents/Products/Products";
 // import Promotion from "../../SharedComponents/Promotion";
 
@@ -11,6 +12,7 @@ const Home = () => {
             <Banner></Banner>
             <Products></Products>
             <AdCare></AdCare>
+            <NewsLetter></NewsLetter>
         </div>
     );
 };

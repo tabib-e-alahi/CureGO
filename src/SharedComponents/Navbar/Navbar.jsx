@@ -80,7 +80,7 @@ const Navbar = () => {
                 className="flex justify-center items-center gap-2"
               >
                 {user?.photoURL ? (
-                  <img src={user?.photoURL} alt="" />
+                  <img className="w-8 h-8 rounded-3xl" src={user?.photoURL} alt="" />
                 ) : (
                   <img className="w-6 h-6" src={profile} alt="" />
                 )}
