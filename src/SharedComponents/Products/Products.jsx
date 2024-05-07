@@ -5,7 +5,7 @@ import './Product.css'
 const Products = () => {
   const axiosPublic = useAxiosPublic()
   const { data: products = [],isPending: loading } = useQuery({
-    queryKey: ['camps'],
+    queryKey: ['products'],
     queryFn: async () => {
         const res = await axiosPublic.get('/products');
         return res.data;
@@ -27,7 +27,7 @@ const Products = () => {
       </h1>
       <div className="grid grid-cols-4 gap-x-6 gap-y-20 ">
         {
-            products?.map(product => <Product key={product?.id} product={product}></Product>)
+            products?.map(product => <Product key={product?._id} product={product}></Product>)
         }
       </div>
     </div>
