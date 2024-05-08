@@ -31,17 +31,20 @@ const ProductDetails = () => {
   } = product;
 
   return (
-    <div className="bg-white  w-full">
-      <img className="w-60 h-80" src={product_image} alt="" />
-      <h1 className="text-4xl text-black mt-20">{product_name}</h1>
-      <h1 className="text-3xl">{brand_name}</h1>
-      <p>Price: ${product_price}</p>
-      <p>Available Quantity: {product_stock_count}</p>
-      <p>{product_subtitle}</p>
+    <div className="bg-white  w-9/12 mx-auto grid grid-cols-2 gap-2 lato_font">
+      <div>
+        <img className="" src={product_image} alt="" />
+        <AccordionCompo key={_id} product={product}></AccordionCompo>
+      </div>
 
+      <div className="pt-6 px-2">
+        <h1 className="text-2xl font-bold">{brand_name}</h1>
+        <h1 className="text-4xl text-black light_font">{product_name}</h1>
 
-      <AccordionCompo key={_id} product={product}></AccordionCompo>
-
+        <p>Price: ${product_price}</p>
+        <p>Available Quantity: {product_stock_count}</p>
+        <p>{product_subtitle}</p>
+      </div>
     </div>
   );
 };

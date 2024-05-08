@@ -14,25 +14,28 @@ const AccordionCompo = ({ product }) => {
   } = product;
 
   return (
-    <div>
-      <Accordion>
+    <div className="my-10 px-4">
+      <Accordion className="border-y-2 border-gray-600">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1-content"
-          id="panel1-header"
+          id="panel1-header" className="text-xl"
         >
-          Key Ingredients
+          The Main Ingredients
         </AccordionSummary>
         <AccordionDetails>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          malesuada lacus ex, sit amet blandit leo lobortis eget.
+        {Object.keys(key_ingredients_description).map(key => (
+        <div key={key} className="flex items-center gap-1 text-sm font-light">
+          <h1 className="font-medium w-fit ">{key}:</h1> <p>{key_ingredients_description[key]}</p>
+        </div>
+      ))}
         </AccordionDetails>
       </Accordion>
-      <Accordion>
+      <Accordion className="">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2-content"
-          id="panel2-header"
+          id="panel2-header" className="text-xl"
         >
           Accordion 2
         </AccordionSummary>
@@ -41,11 +44,11 @@ const AccordionCompo = ({ product }) => {
           malesuada lacus ex, sit amet blandit leo lobortis eget.
         </AccordionDetails>
       </Accordion>
-      <Accordion defaultExpanded>
+      <Accordion className="border-y-2 border-gray-600">
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel3-content"
-          id="panel3-header"
+          id="panel3-header" className="text-xl"
         >
           Accordion Actions
         </AccordionSummary>
