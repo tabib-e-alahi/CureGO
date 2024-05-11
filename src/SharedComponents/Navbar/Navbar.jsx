@@ -1,11 +1,13 @@
 import "./Navbar.css";
 import profile from "../../assets/profile.png";
-import cart from "../../assets/cart.png";
+import cartIcon from "../../assets/cart.png";
 import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import useCart from "../../hooks/useCart";
 
 const Navbar = () => {
   const { user, logOut } = useAuth();
+  const [cart] = useCart();
 
   const handleSignOut = () => {
     logOut();
@@ -80,7 +82,11 @@ const Navbar = () => {
                 className="flex justify-center items-center gap-2"
               >
                 {user?.photoURL ? (
-                  <img className="w-8 h-8 rounded-3xl" src={user?.photoURL} alt="" />
+                  <img
+                    className="w-8 h-8 rounded-3xl"
+                    src={user?.photoURL}
+                    alt=""
+                  />
                 ) : (
                   <img className="w-6 h-6" src={profile} alt="" />
                 )}
@@ -112,7 +118,18 @@ const Navbar = () => {
             </Link>
           )}
 
-          <img className="w-6 h-6" src={cart} alt="" />
+          <div className="relative py-2">
+            {cart?.length > 0 ? (
+              <div className="-top-1 absolute left-3">
+                <p className="flex h-2 w-2 items-center justify-center rounded-full bg-red-500 p-3 text-xs text-white">
+                  {cart?.length}
+                </p>
+              </div>
+            ) : (
+              ""
+            )}
+            <img className="w-6 h-6" src={cartIcon} alt="" />
+          </div>
         </div>
       </div>
       <ul className="flex justify-center items-center gap-10 text-xl text-black pb-4">

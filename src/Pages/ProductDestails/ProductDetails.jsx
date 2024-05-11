@@ -8,6 +8,7 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import useAuth from "../../hooks/useAuth";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 import Swal from "sweetalert2";
+import useCart from "../../hooks/useCart";
 
 const ProductDetails = () => {
   const { user } = useAuth();
@@ -19,7 +20,6 @@ const ProductDetails = () => {
   const {
     data: product = {},
     isLoading: loading,
-    refetch,
   } = useQuery({
     queryKey: ["product"],
     queryFn: async () => {
@@ -27,6 +27,8 @@ const ProductDetails = () => {
       return res?.data;
     },
   });
+
+  const [,refetch] = useCart()
 
   const {
     _id,
