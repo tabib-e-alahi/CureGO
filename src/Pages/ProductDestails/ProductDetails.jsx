@@ -1,12 +1,9 @@
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
-import Accordion from "@mui/material/Accordion";
-import AccordionActions from "@mui/material/AccordionActions";
-import AccordionSummary from "@mui/material/AccordionSummary";
-import AccordionDetails from "@mui/material/AccordionDetails";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import Button from "@mui/material/Button";
+import AccordionCompo from "./ProductComo/AccordionCompo";
+import ProductDetailsSkeleton from "./ProductDetailsSkeleton";
+import { Rating } from "@mui/material";
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -42,77 +39,55 @@ const ProductDetails = () => {
     return_policy,
   } = product;
   console.log(key_ingredients_description);
+  const reviewCount = reviews.length;
+  const totalRating = reviews.reduce(
+    (total, item) => total + item["rating"],
+    0
+  );
+  const avgRatings = totalRating / reviewCount;
 
   return (
-    <div className="bg-white  w-9/12 mx-auto grid grid-cols-2 gap-2 lato_font">
+    <div className=" bg-white w-9/12 mx-auto grid grid-cols-2 gap-10 lato_font p-4">
       {loading ? (
-        <div className="loader my-44 mx-auto"></div>
+        <ProductDetailsSkeleton></ProductDetailsSkeleton>
       ) : (
         <>
-          <div>
-            <img className="" src={product_image} alt="" />
-            <div className="my-10 px-4">
-              <Accordion className="border-y-2 border-gray-600">
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel1-content"
-                  id="panel1-header"
-                  className="text-xl"
-                >
-                  The Main Ingredients
-                </AccordionSummary>
-                <AccordionDetails>
-                  {Object.entries(key_ingredients_description).map(
-                    ([key, value]) => (
-                      <div key={key}>
-                        <strong>{key}:</strong> {value}
-                      </div>
-                    )
-                  )}
-                </AccordionDetails>
-              </Accordion>
-              <Accordion className="">
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel2-content"
-                  id="panel2-header"
-                  className="text-xl"
-                >
-                  Accordion 2
-                </AccordionSummary>
-                <AccordionDetails>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
-                </AccordionDetails>
-              </Accordion>
-              <Accordion className="border-y-2 border-gray-600">
-                <AccordionSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel3-content"
-                  id="panel3-header"
-                  className="text-xl"
-                >
-                  Accordion Actions
-                </AccordionSummary>
-                <AccordionDetails>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-                  eget.
-                </AccordionDetails>
-                <AccordionActions>
-                  <Button>Cancel</Button>
-                  <Button>Agree</Button>
-                </AccordionActions>
-              </Accordion>
-            </div>
+          <div className="p-4">
+            <img className="mx-auto" src={product_image} alt="" />
+            <AccordionCompo product={product}></AccordionCompo>
           </div>
 
           <div className="pt-6 px-2">
-            <h1 className="text-2xl font-bold">{brand_name}</h1>
-            <h1 className="text-4xl text-black light_font">{product_name}</h1>
-
-            <p>Price: ${product_price}</p>
+            <h1 className="text-4xl text-[#161a1a] font-bold">{brand_name}</h1>
+            <h1 className="text-3xl text-[#2E3337] light_font mt-3 mb-6">
+              {product_name}
+            </h1>
+            <div className="flex flex-col gap-2 mb-3 justify-start">
+              <div className="flex gap-1 items-center">
+                <Rating
+                  className="w-40 "
+                  size="large"
+                  name="half-rating-read"
+                  value={avgRatings}
+                  precision={0.1}
+                  readOnly
+                />{" "}
+                <p className="font-semibold text-xl ml-1">({avgRatings}/5)</p>
+              </div>
+              <p
+                className="text-[#333333] text-sm"
+              >
+                <span className=" hover:underline hover:font-bold">
+                  {reviewCount} reviews
+                </span>{" "}
+                <Link className="ml-4 hover:underline hover:font-bold">
+                  Write Reviews
+                </Link>
+              </p>
+            </div>
+            <p className="my-10 text-3xl  light_font">
+              Price: ${product_price}
+            </p>
             <p>Available Quantity: {product_stock_count}</p>
             <p>{product_subtitle}</p>
           </div>
