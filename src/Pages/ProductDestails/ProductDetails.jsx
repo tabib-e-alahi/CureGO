@@ -1,32 +1,39 @@
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import useAxiosPublic from "../../hooks/useAxiosPublic";
 import { useQuery } from "@tanstack/react-query";
 import AccordionCompo from "./ProductComo/AccordionCompo";
 import ProductDetailsSkeleton from "./ProductDetailsSkeleton";
 import { Rating } from "@mui/material";
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
-
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import useAuth from "../../hooks/useAuth";
+import useAxiosSecure from "../../hooks/useAxiosSecure";
+import Swal from "sweetalert2";
 
 const ProductDetails = () => {
+  const { user } = useAuth();
   const { id } = useParams();
-  console.log("the desired id:===", id);
   const axiosPublic = useAxiosPublic();
+  const axiosSecure = useAxiosSecure();
+  const navigate = useNavigate();
 
-  const { data: product = {}, isLoading: loading } = useQuery({
+  const {
+    data: product = {},
+    isLoading: loading,
+    refetch,
+  } = useQuery({
     queryKey: ["product"],
     queryFn: async () => {
       const res = await axiosPublic.get(`/products/${id}`);
       return res?.data;
     },
   });
-  console.log(product);
 
   const {
+    _id,
     product_name,
     product_image,
     brand_name,
     reviews,
-    key_ingredients_description,
     product_usage,
     product_price,
     product_stock_count,
@@ -34,15 +41,61 @@ const ProductDetails = () => {
     ingredients,
     product_quantity,
     return_policy,
-    
   } = product;
-  console.log(key_ingredients_description);
+
   const reviewCount = reviews?.length;
   const totalRating = reviews?.reduce(
     (total, item) => total + item["rating"],
     0
   );
   const avgRatings = totalRating / reviewCount;
+
+  const handleAddToCart = () => {
+    if (user && user.email) {
+      const cartItem = {
+        productId: _id,
+        email: user.email,
+        product_name,
+        product_image,
+        brand_name,
+        product_price,
+        product_quantity,
+        product_stock_count,
+      };
+      //ToDO: send the data to the database
+      axiosSecure.post("/productCarts", cartItem).then((res) => {
+        console.log(res.data);
+        if (res.data.insertedId) {
+          //show a swal
+          Swal.fire({
+            title: "Product Added To Cart.",
+            showClass: {
+              popup: "animate__animated animate__fadeInDown",
+            },
+            hideClass: {
+              popup: "animate__animated animate__fadeOutUp",
+            },
+          });
+        }
+        //refetch the cart to get the update carts count
+        refetch();
+      });
+    } else {
+      Swal.fire({
+        title: "You are no logged in",
+        text: "You have to logged in to add this product to the cart!",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#d33",
+        confirmButtonText: "Yes, Login",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          navigate("/login", { state: { from: location } });
+        }
+      });
+    }
+  };
 
   return (
     <div className="  w-3/4 mx-auto mt-16 lato_font p-4">
@@ -51,7 +104,11 @@ const ProductDetails = () => {
       ) : (
         <div className="flex justify-center">
           <div className="w-full ">
-            <img className="mx-auto w-fit h-[600px]" src={product_image} alt="" />
+            <img
+              className="mx-auto w-fit h-[600px]"
+              src={product_image}
+              alt=""
+            />
             <AccordionCompo product={product}></AccordionCompo>
           </div>
 
@@ -85,20 +142,30 @@ const ProductDetails = () => {
               </p>
             </div>
             <p className="mt-14 text-[#23282d] text-4xl  lato_font ">
-             Price: ${product_price}
+              Price: ${product_price}
             </p>
-            <p className=" text-gray-700 font-medium">In stock: {product_stock_count}</p>
+            <p className=" text-gray-700 font-medium">
+              In stock: {product_stock_count}
+            </p>
             <hr className="bg-gray-800 h-[1.8px] my-10" />
             <div>
               <p className="mb-1 font-medium text-gray-600">Size:</p>
-              <p className="border border-gray-400 hover:border-2 hover:border-gray-700 rounded-sm py-3 px-4  w-fit">{product_quantity}</p>
+              <p className="border border-gray-400 hover:border-2 hover:border-gray-700 rounded-sm py-3 px-4  w-fit">
+                {product_quantity}
+              </p>
             </div>
 
             <div className="w-11/12 mx-auto mt-10">
-            <button className="w-full lato_font  bg-[#2E3337] text-white py-3 hover:bg-[#a6776a] uppercase text-xl font-light">Add To Cart</button>
-            <button className="hover:bg-gray-400 hover:px-3 hover:py-2 w-fit   font-semibold  lato_font mt-6 ml-2"><FavoriteBorderIcon className="mr-1"/> Save To WishList</button>
+              <button
+                onClick={handleAddToCart}
+                className="w-full lato_font  bg-[#2E3337] text-white py-3 hover:bg-[#a6776a] uppercase text-xl font-light"
+              >
+                Add To Cart
+              </button>
+              <button className="hover:bg-gray-400 hover:px-3 hover:py-2 w-fit   font-semibold  lato_font mt-6 ml-2">
+                <FavoriteBorderIcon className="mr-1" /> Save To WishList
+              </button>
             </div>
-            
           </div>
         </div>
       )}

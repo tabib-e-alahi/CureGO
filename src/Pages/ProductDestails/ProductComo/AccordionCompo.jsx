@@ -4,11 +4,8 @@ import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const AccordionCompo = ({ product }) => {
-  console.log(product);
   const { key_ingredients_description, skin_concerns, product_overview } =
     product;
-
-  console.log(key_ingredients_description);
 
   return (
     <div className="my-10 px-4">
