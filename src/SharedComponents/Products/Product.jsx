@@ -11,7 +11,7 @@ const Product = ({ product }) => {
     product_price,
     reviews,
   } = product;
-  console.log(reviews.length);
+  // console.log(reviews.length);
   const reviewCount = reviews.length;
   const totalRating = reviews.reduce(
     (total, item) => total + item["rating"],
