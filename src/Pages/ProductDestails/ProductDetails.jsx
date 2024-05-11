@@ -4,6 +4,8 @@ import { useQuery } from "@tanstack/react-query";
 import AccordionCompo from "./ProductComo/AccordionCompo";
 import ProductDetailsSkeleton from "./ProductDetailsSkeleton";
 import { Rating } from "@mui/material";
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+
 
 const ProductDetails = () => {
   const { id } = useParams();
@@ -43,13 +45,13 @@ const ProductDetails = () => {
   const avgRatings = totalRating / reviewCount;
 
   return (
-    <div className="  w-3/4 mx-auto  lato_font p-4">
+    <div className="  w-3/4 mx-auto mt-16 lato_font p-4">
       {loading ? (
         <ProductDetailsSkeleton></ProductDetailsSkeleton>
       ) : (
         <div className="flex justify-center">
-          <div className="w-full">
-            <img className="mx-auto w-full h-fit" src={product_image} alt="" />
+          <div className="w-full ">
+            <img className="mx-auto w-fit h-[600px]" src={product_image} alt="" />
             <AccordionCompo product={product}></AccordionCompo>
           </div>
 
@@ -85,8 +87,18 @@ const ProductDetails = () => {
             <p className="mt-14 text-[#23282d] text-4xl  lato_font ">
              Price: ${product_price}
             </p>
-            <p className="mb-14 text-gray-700 font-medium">In stock: {product_stock_count}</p>
-            <p>Available Quantity: {product_stock_count}</p>
+            <p className=" text-gray-700 font-medium">In stock: {product_stock_count}</p>
+            <hr className="bg-gray-800 h-[1.8px] my-10" />
+            <div>
+              <p className="mb-1 font-medium text-gray-600">Size:</p>
+              <p className="border border-gray-400 hover:border-2 hover:border-gray-700 rounded-sm py-3 px-4  w-fit">{product_quantity}</p>
+            </div>
+
+            <div className="w-11/12 mx-auto mt-10">
+            <button className="w-full lato_font  bg-[#2E3337] text-white py-3 hover:bg-[#a6776a] uppercase text-xl font-light">Add To Cart</button>
+            <button className="hover:bg-gray-400 hover:px-3 hover:py-2 w-fit   font-semibold  lato_font mt-6 ml-2"><FavoriteBorderIcon className="mr-1"/> Save To WishList</button>
+            </div>
+            
           </div>
         </div>
       )}
