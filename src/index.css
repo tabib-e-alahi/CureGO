@@ -58,3 +58,16 @@
 .rating_size{
 height: 60px !important;
 }
+
+.no_border_class{
+/* border: 0px !important; */
+box-shadow: none !important;
+background:none !important;
+border-radius: 0px !important;
+
+}
+.no_padding_class{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+}
