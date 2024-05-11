@@ -14,7 +14,6 @@ const ProductDetails = () => {
     queryKey: ["product"],
     queryFn: async () => {
       const res = await axiosPublic.get(`/products/${id}`);
-      console.log(res.data);
       return res?.data;
     },
   });
@@ -39,25 +38,25 @@ const ProductDetails = () => {
     return_policy,
   } = product;
   console.log(key_ingredients_description);
-  const reviewCount = reviews.length;
-  const totalRating = reviews.reduce(
+  const reviewCount = reviews?.length;
+  const totalRating = reviews?.reduce(
     (total, item) => total + item["rating"],
     0
   );
   const avgRatings = totalRating / reviewCount;
 
   return (
-    <div className=" bg-white w-9/12 mx-auto grid grid-cols-2 gap-10 lato_font p-4">
+    <div className=" bg-white w-9/12 mx-auto  lato_font p-4">
       {loading ? (
         <ProductDetailsSkeleton></ProductDetailsSkeleton>
       ) : (
-        <>
-          <div className="p-4">
-            <img className="mx-auto" src={product_image} alt="" />
+        <div className="flex justify-center">
+          <div className="w-full pr-8">
+            <img className="mx-auto w-full h-fit" src={product_image} alt="" />
             <AccordionCompo product={product}></AccordionCompo>
           </div>
 
-          <div className="pt-6 px-2">
+          <div className="pt-6 px-4 w-9/12">
             <h1 className="text-4xl text-[#161a1a] font-bold">{brand_name}</h1>
             <h1 className="text-3xl text-[#2E3337] light_font mt-3 mb-6">
               {product_name}
@@ -91,7 +90,7 @@ const ProductDetails = () => {
             <p>Available Quantity: {product_stock_count}</p>
             <p>{product_subtitle}</p>
           </div>
-        </>
+        </div>
       )}
     </div>
   );

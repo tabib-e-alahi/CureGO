@@ -31,7 +31,7 @@ const AccordionCompo = ({ product }) => {
                   {Object.entries(key_ingredients_description).map(
                     ([key, value]) => (
                       <div key={key}>
-                        <strong>{key}:</strong> {value}
+                        <strong>{key}:</strong> <span className="text-sm font-light lato_font text-black">{value}</span>
                       </div>
                     )
                   )}
