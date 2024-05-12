@@ -3,7 +3,10 @@ import useAxiosSecure from "../../hooks/useAxiosSecure";
 
 
 const CartCompo = ({cart,refetch}) => {
-    const axiosSecure = useAxiosSecure()
+    const axiosSecure = useAxiosSecure();
+
+    
+
     const {
         _id,
         productId,
@@ -13,8 +16,12 @@ const CartCompo = ({cart,refetch}) => {
         product_price,
         product_quantity,
         product_stock_count,
-        product_subtitle
+        product_subtitle,
+        quantity
       } = cart
+
+
+
 
 const handleCardItemDelete = () =>{
     Swal.fire({
@@ -57,7 +64,7 @@ const handleCardItemDelete = () =>{
                 <p className="text-base font-black leading-none text-gray-800">
                   {product_name}
                 </p>
-                <p>Qty:1</p>
+                <p>Qty:{quantity}</p>
               </div>
               <p className="text-xs leading-3 text-gray-600 pt-2">
                 Size: {product_quantity}

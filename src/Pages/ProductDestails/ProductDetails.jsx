@@ -68,7 +68,7 @@ const ProductDetails = () => {
       //ToDO: send the data to the database
       axiosSecure.post("/productCarts", cartItem).then((res) => {
         console.log(res.data);
-        if (res.data.insertedId) {
+        if (res.data.message === "Item added to cart successfully.") {
           //show a swal
           Swal.fire({
             title: "Product Added To Cart.",

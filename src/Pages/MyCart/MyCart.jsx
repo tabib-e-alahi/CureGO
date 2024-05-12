@@ -3,7 +3,7 @@ import CartCompo from "./CartCompo";
 
 const MyCart = () => {
   const [cart, refetch] = useCart();
-  const totalPrice = cart.reduce((sum,item) => sum + item.product_price,0)
+  const totalPrice = cart.reduce((sum,item) => sum + (item.product_price * item.quantity),0)
 const shippingCost = totalPrice > 50 ? 15 : 9
 
   return (
