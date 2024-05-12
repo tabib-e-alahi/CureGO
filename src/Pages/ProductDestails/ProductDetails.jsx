@@ -63,6 +63,7 @@ const ProductDetails = () => {
         product_price,
         product_quantity,
         product_stock_count,
+        product_subtitle
       };
       //ToDO: send the data to the database
       axiosSecure.post("/productCarts", cartItem).then((res) => {
@@ -100,7 +101,7 @@ const ProductDetails = () => {
   };
 
   return (
-    <div className="  w-3/4 mx-auto mt-16 lato_font p-4">
+    <div className=" w-3/4  mx-auto mt-16 lato_font p-4">
       {loading ? (
         <ProductDetailsSkeleton></ProductDetailsSkeleton>
       ) : (
@@ -168,7 +169,8 @@ const ProductDetails = () => {
                 <FavoriteBorderIcon className="mr-1" /> Save To WishList
               </button>
             </div>
-          </div>
+          </div>        
+
         </div>
       )}
     </div>

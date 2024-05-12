@@ -118,6 +118,7 @@ const Navbar = () => {
             </Link>
           )}
 
+          <Link to='/myCart'>
           <div className="relative py-2">
             {cart?.length > 0 ? (
               <div className="-top-1 absolute left-3">
@@ -130,6 +131,7 @@ const Navbar = () => {
             )}
             <img className="w-6 h-6" src={cartIcon} alt="" />
           </div>
+          </Link>
         </div>
       </div>
       <ul className="flex justify-center items-center gap-10 text-xl text-black pb-4">
