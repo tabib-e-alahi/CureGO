@@ -3,6 +3,8 @@ import CartCompo from "./CartCompo";
 
 const MyCart = () => {
   const [cart, refetch] = useCart();
+  const totalPrice = cart.reduce((sum,item) => sum + item.product_price,0)
+const shippingCost = totalPrice > 50 ? 15 : 9
 
   return (
     <div className="container mx-auto mt-10">
@@ -38,15 +40,13 @@ const MyCart = () => {
           </h1>
           <div className="flex justify-between mt-10 mb-5">
             <span className="font-semibold text-sm uppercase">Items 3</span>
-            <span className="font-semibold text-sm">590$</span>
+            <span className="font-semibold text-sm">{totalPrice.toFixed(2)}$</span>
           </div>
           <div>
             <label className="font-medium inline-block mb-3 text-sm uppercase">
               Shipping
             </label>
-            <select className="block p-2 text-gray-600 w-full text-sm">
-              <option>Standard shipping - $10.00</option>
-            </select>
+            <p className="border w-fit px-4 border-gray-300">Standard shipping - ${shippingCost}</p>
           </div>
           <div className="py-10">
             <label
@@ -68,7 +68,7 @@ const MyCart = () => {
           <div className="border-t mt-8">
             <div className="flex font-semibold justify-between py-6 text-sm uppercase">
               <span>Total cost</span>
-              <span>$600</span>
+              <span>${(totalPrice+shippingCost).toFixed(2)}</span>
             </div>
             <button className="bg-indigo-500 font-semibold hover:bg-indigo-600 py-3 text-sm text-white uppercase w-full">
               Checkout

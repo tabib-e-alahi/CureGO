@@ -5,6 +5,7 @@ import useAxiosSecure from "../../hooks/useAxiosSecure";
 const CartCompo = ({cart,refetch}) => {
     const axiosSecure = useAxiosSecure()
     const {
+        _id,
         productId,
         product_name,
         product_image,
@@ -26,7 +27,7 @@ const handleCardItemDelete = () =>{
         confirmButtonText: "Yes, delete it!",
       }).then((result) => {
         if (result.isConfirmed) {
-          axiosSecure.delete(`/productCarts/${productId}`).then((res) => {
+          axiosSecure.delete(`/productCarts/${_id}`).then((res) => {
             console.log(res.data);
             if (res.data.deletedCount > 0) {
               refetch();
