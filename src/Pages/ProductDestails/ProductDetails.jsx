@@ -9,6 +9,7 @@ import useAuth from "../../hooks/useAuth";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 import Swal from "sweetalert2";
 import useCart from "../../hooks/useCart";
+import Review from "../../SharedComponents/Review/Review";
 
 const ProductDetails = () => {
   const { user } = useAuth();
@@ -182,9 +183,12 @@ const ProductDetails = () => {
          <p className="text-lg"><span className="text-xl font-semibold  mr-1">Usage:</span> {product_usage}</p> 
          <p className=" lato_font text-justify"><span className="text-xl lato_font font-semibold mr-1">Ingredients:</span> {ingredients?.map((ing,idx) => <span className="mr-2 lato_font text-lg" key={idx}>{ing},</span>)} </p>
          <p className="text-lg"><span className="text-xl font-semibold  mr-1">Size:</span> {product_quantity}</p>
+         <p className="text-lg"><span className="text-xl font-semibold  mr-1">Return Policy:</span> {return_policy}</p>
          </div>
 
       </div>
+
+      <Review></Review>
         </div>
       )}
     </div>
