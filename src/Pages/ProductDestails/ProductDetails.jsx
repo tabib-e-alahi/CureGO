@@ -105,7 +105,8 @@ const ProductDetails = () => {
       {loading ? (
         <ProductDetailsSkeleton></ProductDetailsSkeleton>
       ) : (
-        <div className="flex justify-center">
+        <div className="flex flex-col gap-y-10">
+          <div className="flex justify-center">
           <div className="w-full ">
             <img
               className="mx-auto w-fit h-[600px]"
@@ -171,6 +172,19 @@ const ProductDetails = () => {
             </div>
           </div>        
 
+
+        </div>
+        <div className="ml-3 "> 
+        <h1 className="text-2xl font-bold lato_font mb-2">Product Description:</h1>
+        <hr className="bg-gray-800 h-0.5 w-[600px] mb-8" />
+         <div className="space-y-4  w-[950px]">
+         <p className="text-lg"><span className="text-xl font-semibold  mr-1">Brand:</span> {brand_name}</p>
+         <p className="text-lg"><span className="text-xl font-semibold  mr-1">Usage:</span> {product_usage}</p> 
+         <p className=" lato_font text-justify"><span className="text-xl lato_font font-semibold mr-1">Ingredients:</span> {ingredients?.map((ing,idx) => <span className="mr-2 lato_font text-lg" key={idx}>{ing},</span>)} </p>
+         <p className="text-lg"><span className="text-xl font-semibold  mr-1">Size:</span> {product_quantity}</p>
+         </div>
+
+      </div>
         </div>
       )}
     </div>
