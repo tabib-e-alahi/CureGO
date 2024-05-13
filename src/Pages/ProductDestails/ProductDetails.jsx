@@ -10,6 +10,7 @@ import useAxiosSecure from "../../hooks/useAxiosSecure";
 import Swal from "sweetalert2";
 import useCart from "../../hooks/useCart";
 import Review from "../../SharedComponents/Review/Review";
+import getReviews from "../../Uitils/getRatings";
 
 const ProductDetails = () => {
   const { user } = useAuth();
@@ -46,12 +47,8 @@ const ProductDetails = () => {
     return_policy,
   } = product;
 
-  const reviewCount = reviews?.length;
-  const totalRating = reviews?.reduce(
-    (total, item) => total + item["rating"],
-    0
-  );
-  const avgRatings = totalRating / reviewCount;
+  const {avgRatings,reviewCount} = getReviews(reviews)
+
 
   const handleAddToCart = () => {
     if (user && user.email) {
@@ -66,7 +63,7 @@ const ProductDetails = () => {
         product_stock_count,
         product_subtitle
       };
-      //ToDO: send the data to the database
+     
       axiosSecure.post("/productCarts", cartItem).then((res) => {
         console.log(res.data);
         if (res.data.message === "Item added to cart successfully.") {
@@ -135,7 +132,7 @@ const ProductDetails = () => {
                   precision={0.1}
                   readOnly
                 />{" "}
-                <p className="font-semibold text-xl ml-1">({avgRatings}/5)</p>
+                <p className="font-semibold text-xl ml-1">({avgRatings.toFixed(1)}/5)</p>
               </div>
               <p className="text-[#333333] text-sm">
                 <span className=" hover:underline hover:font-bold">
@@ -188,7 +185,7 @@ const ProductDetails = () => {
 
       </div>
 
-      <Review></Review>
+      <Review reviews={reviews} avgRatings={avgRatings}></Review>
         </div>
       )}
     </div>
