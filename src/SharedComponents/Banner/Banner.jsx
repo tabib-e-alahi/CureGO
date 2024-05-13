@@ -1,8 +1,10 @@
-import b1 from "../../assets/b1.jpg";
+import banner_1 from "../../assets/banner_1.jpg";
+import banner_2 from "../../assets/banner_2.jpg";
+import banner_3 from "../../assets/banner_3.jpg";
+import banner_4 from "../../assets/banner_4.jpg";
 import b2 from "../../assets/b2.jpg";
 import b3 from "../../assets/b3.jpg";
 import b4 from "../../assets/b4.jpg";
-import b5 from "../../assets/b5.jpg";
 import "./Banner.css";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -28,11 +30,13 @@ const Banner = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide><img className="h-[700px] w-full" src={b1} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[700px] w-full" src={banner_1} alt="" /></SwiperSlide>
         <SwiperSlide><img className="h-[700px] w-full" src={b2} alt="" /></SwiperSlide>
         <SwiperSlide><img className="h-[700px] w-full" src={b3} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[700px] w-full" src={banner_4} alt="" /></SwiperSlide>
         <SwiperSlide><img className="h-[700px] w-full" src={b4} alt="" /></SwiperSlide>
-        <SwiperSlide><img className="h-[700px] w-full" src={b5} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[700px] w-full" src={banner_2} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[700px] w-full" src={banner_3} alt="" /></SwiperSlide>
       </Swiper>
       </div>
     </>

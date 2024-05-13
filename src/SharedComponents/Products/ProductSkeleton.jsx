@@ -18,7 +18,7 @@ const ProductSkeleton = () => {
         </div>
 
 
-      <div className="space-y-2 mt-1 text-left mb-8 px-4">
+      <div className="space-y-2 mt-1 text-left my-8 px-4">
         <h2 className="bg-gray-200 h-8 w-full  custom_font_class  text-lg"></h2>
         <div className="flex gap-2 justify-start items-center">
           <p className="bg-gray-200 h-8 w-full"></p>
