@@ -1,17 +1,38 @@
 import { Rating } from "@mui/material";
 import getReviews from "../../Uitils/getRatings";
+import useAxiosPublic from "../../hooks/useAxiosPublic";
+import { useQuery } from "@tanstack/react-query";
 
-const Review = ({ reviews }) => {
+const Review = ({productId}) => {
+ 
+
+  const axiosPublic = useAxiosPublic()
+
+  const { data: reviews, isLoading: loading } = useQuery({
+    queryKey: ["reviews"],
+    queryFn: async () => {
+      const res = await axiosPublic.get(`/reviews/${productId}`);
+      return res.data;
+    },
+  });
+
+ 
+
   const { avgRatings, reviewCount } = getReviews(reviews);
+
+
   return (
-    <section className="py-24 relative bg-base-100 shadow">
-      <div className="w-full max-w-7xl px-4 md:px-5 lg-6 mx-auto">
+    <section className="py-24 relative bg-base-100 shadow mb-10">
+      { loading ? <div className="loader mx-auto"></div> :
+        <div className="w-full max-w-7xl px-4 md:px-5 lg-6 mx-auto">
         <div className="w-full">
           <h2 className="font-manrope font-bold text-4xl text-black mb-8 text-center">
             Our customer reviews
           </h2>
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-11 pb-11 border-b border-gray-100 max-xl:max-w-2xl max-xl:mx-auto">
-            <div className="box flex flex-col gap-y-4 w-full ">
+          {
+            reviews?.length>0 ?
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-11 pb-11 border-b border-gray-100 max-xl:max-w-2xl max-xl:mx-auto">
+            {<div className="box flex flex-col gap-y-4 w-full ">
               <div className="flex items-center w-full">
             <p className="font-medium text-lg text-black mr-0.5">5</p>
             <svg width={20} height={20} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -97,11 +118,11 @@ const Review = ({ reviews }) => {
             </p>
             <p className="font-medium text-lg py-[1px] text-black mr-0.5">8</p>
           </div>
-            </div>
+            </div>}
             {/* =================== total ratings ==================================== */}
             <div className="p-8 bg-amber-50 rounded-3xl flex items-center justify-center flex-col">
               <h2 className="font-manrope font-bold text-5xl text-amber-400 mb-6">
-                {avgRatings.toFixed(1)}
+                {reviews?.length>0 ? avgRatings.toFixed(1) : "Haven't Rated Yet"}
               </h2>
               <div className="flex items-center justify-center gap-2 sm:gap-6 mb-4">
                
@@ -115,11 +136,11 @@ const Review = ({ reviews }) => {
                 
               </div>
               <p className="font-medium text-xl leading-8 text-gray-900 text-center">
-                {reviewCount} Ratings
+                {reviews?.length>0 ? reviewCount : '0'} Ratings
               </p>
             </div>
 
-          </div>
+          </div> : <p className="text-center text-2xl lato_font font-medium">Haven't Reviewd Yet</p>}
           {
             reviews?.map((rev,idx) => 
             <div key={idx} className="pt-11 pb-8 border-b border-gray-100 max-xl:max-w-2xl max-xl:mx-auto">
@@ -127,36 +148,36 @@ const Review = ({ reviews }) => {
             <Rating
                     size="large"
                     name="half-rating-read"
-                    value={rev.rating}
-                    precision={0.1}
+                    value={rev?.rating}
+                    precision={0.01}
                     readOnly
                   />
             </div>
             <h3 className="font-manrope font-semibold text-xl sm:text-2xl leading-9 text-black mb-6">
-              Outstanding Experience!!!
+              {rev?.review_title}!!!
             </h3>
             <div className="flex sm:items-center flex-col min-[400px]:flex-row justify-between gap-5 mb-4">
               <div className="flex items-center gap-3">
                 <img
-                  src="https://pagedone.io/asset/uploads/1704349572.png"
+                  src={rev?.reviewer_image}
                   alt="John image"
                   className="w-8 h-8"
                 />
                 <h6 className="font-semibold text-lg leading-8 text-indigo-600 ">
-                  {rev.user}
+                  {rev?.reviewer}
                 </h6>
               </div>
               <p className="font-normal text-lg leading-8 text-gray-400">
-                Nov 01, 2023
+               {rev?.reviewing_time}
               </p>
             </div>
             <p className="font-normal text-lg leading-8 text-gray-600 max-xl:text-justify">
-              {rev.comment}
+              {rev?.comment}
             </p>
           </div>)
           }
         </div>
-      </div>
+      </div>}
     </section>
   );
 };

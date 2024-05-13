@@ -114,6 +114,7 @@ const ProductDetails = () => {
 
     const reviewDetails = {
       review_title,
+      reviewer_email:user?.email,
       reviewer: user?.displayName,
       reviewer_image: user?.photoURL,
       comment,
@@ -247,7 +248,7 @@ const ProductDetails = () => {
             </div>
           </div>
 
-          <Review reviews={reviews} avgRatings={avgRatings}></Review>
+          <Review productId={_id}></Review>
         </div>
       )}
       <dialog id="my_modal_2" className="modal">
