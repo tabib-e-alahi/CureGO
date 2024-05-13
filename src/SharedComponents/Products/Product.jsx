@@ -5,7 +5,8 @@ import useCart from "../../hooks/useCart";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 import Swal from "sweetalert2";
 import useAuth from "../../hooks/useAuth";
-import getReviews from "../../Uitils/getRatings";
+import { getReviews } from "../../Uitils/getRatings";
+
 
 const Product = ({ product }) => {
   // console.log(product);

@@ -4,7 +4,7 @@ import getReviews from "../../Uitils/getRatings";
 const Review = ({ reviews }) => {
   const { avgRatings, reviewCount } = getReviews(reviews);
   return (
-    <section className="py-24 relative">
+    <section className="py-24 relative bg-base-100 shadow">
       <div className="w-full max-w-7xl px-4 md:px-5 lg-6 mx-auto">
         <div className="w-full">
           <h2 className="font-manrope font-bold text-4xl text-black mb-8 text-center">
@@ -128,7 +128,7 @@ const Review = ({ reviews }) => {
                     size="large"
                     name="half-rating-read"
                     value={rev.rating}
-                    precision={0.01}
+                    precision={0.1}
                     readOnly
                   />
             </div>
