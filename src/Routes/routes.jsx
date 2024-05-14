@@ -5,11 +5,14 @@ import ProductDetails from "../Pages/ProductDestails/ProductDetails";
 import Login from "../Pages/Authentication/Login/Login";
 import SignUp from "../Pages/Authentication/SignUp/SignUp";
 import MyCart from "../Pages/MyCart/MyCart";
+import PrivateRoute from "./PrivateRoute";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement:<ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
@@ -25,11 +28,11 @@ const router = createBrowserRouter([
       },
       {
         path:'/products/:id',
-        element:<ProductDetails></ProductDetails>
+        element:<PrivateRoute><ProductDetails></ProductDetails></PrivateRoute>
       },
       {
         path:'/myCart',
-        element:<MyCart></MyCart>
+        element:<PrivateRoute><MyCart></MyCart></PrivateRoute>
       }
     ],
   },
