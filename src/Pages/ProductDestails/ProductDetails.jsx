@@ -13,6 +13,7 @@ import Review from "../../SharedComponents/Review/Review";
 import getReviews, { formatDate } from "../../Uitils/getRatings";
 import { useState } from "react";
 
+
 const ProductDetails = () => {
   const [rating, setRating] = useState(0);
   const [reviewAdd, setReviewAdded] = useState(false);

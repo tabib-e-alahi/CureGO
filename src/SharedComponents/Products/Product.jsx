@@ -28,7 +28,7 @@ const Product = ({ product }) => {
   } = product;
   // console.log(reviews.length);
   const { avgRatings, reviewCount } = getReviews(reviews);
-  console.log(reviews)
+  // console.log(reviews)
 
   const handleAddToCart = () => {
     if (user && user.email) {

@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import profile from "../../assets/profile.png";
 import cartIcon from "../../assets/cart.png";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import useCart from "../../hooks/useCart";
 
@@ -16,18 +16,18 @@ const Navbar = () => {
   // console.log(user);
   const navLinks = (
     <>
-      <li>
+      {/* <li>
         <NavLink className="nav_items">Home</NavLink>
       </li>
       <li>
-        <NavLink>About</NavLink>
+        <NavLink to='/about'>About Us</NavLink>
       </li>
       <li>
-        <NavLink>Contact</NavLink>
+        <NavLink to='/contact'>Contact Us</NavLink>
       </li>
       <li>
         <NavLink>About</NavLink>
-      </li>
+      </li> */}
     </>
   );
 
@@ -137,6 +137,10 @@ const Navbar = () => {
       <ul className="flex justify-center items-center gap-10 text-xl text-black pb-4">
         {navLinks}
       </ul>
+
+      <div className="bg-gray-600 w-11/12 mx-auto text-white text-center py-4">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quidem id quos, animi non reprehenderit! Saepe, itaque vitae! Magni, illo!
+        </div>
     </div>
   );
 };
