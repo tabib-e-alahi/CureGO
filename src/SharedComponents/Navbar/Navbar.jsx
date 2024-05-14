@@ -4,6 +4,7 @@ import cartIcon from "../../assets/cart.png";
 import { Link } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import useCart from "../../hooks/useCart";
+import SkinConcerns from "../SkinConcerns/SkinConcerns";
 
 const Navbar = () => {
   const { user, logOut } = useAuth();
@@ -36,10 +37,10 @@ const Navbar = () => {
       <div className="navbar bg-[#f6f4f1] p-8">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div tabIndex={0} role="button" className="btn  ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-5 w-5"
+                className="h-12 w-12"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -52,12 +53,12 @@ const Navbar = () => {
                 />
               </svg>
             </div>
-            <ul
+            <div
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[4]  rounded-box"
             >
-              {navLinks}
-            </ul>
+              <SkinConcerns></SkinConcerns>
+            </div>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">

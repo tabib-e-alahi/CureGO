@@ -38,10 +38,12 @@ const SkinConcerns = () => {
       {loading ? (
         <div className="loader"></div>
       ) : (
-        <ul className="text-left bg-[#A6776A] text-lg px-4 py-6 shadow-md  rounded-2xl space-y-2 lato_font">
+        <ul className="text-center bg-[#A6776A] text-lg px-4 py-6 shadow-md w-80  rounded-2xl space-y-2 lato_font">
+            <h1>Search by Concerns</h1>
+            <hr />
           {distinctSkinConcerns?.map((concern) => (
             <li key={concern} onClick={() => handleConcernClick(concern)}>
-              {concern}
+              <button>{concern}</button>
             </li>
           ))}
         </ul>
