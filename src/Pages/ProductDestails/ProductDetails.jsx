@@ -37,7 +37,6 @@ const ProductDetails = () => {
     product_name,
     product_image,
     brand_name,
-    reviews,
     product_usage,
     product_price,
     product_stock_count,
@@ -46,6 +45,16 @@ const ProductDetails = () => {
     product_quantity,
     return_policy,
   } = product;
+
+  // ======================= retrieving reviews from database ===================
+ 
+  const { data: reviews, refetch:review_refetch} = useQuery({
+    queryKey: ["reviews"],
+    queryFn: async () => {
+      const res = await axiosPublic.get(`/reviews/${_id}`);
+      return res.data;
+    },
+  });
 
   const { avgRatings, reviewCount } = getReviews(reviews);
 
@@ -95,6 +104,8 @@ const ProductDetails = () => {
       });
     }
   };
+
+
   // ============================== for reviews =========================
 
   console.log(user);
@@ -102,6 +113,7 @@ const ProductDetails = () => {
     setRating(newValue);
   };
 
+  // =============== review upload function ======================
   const handleAddReview = (e) => {
     e.preventDefault();
     const form = e.target;
@@ -126,6 +138,7 @@ const ProductDetails = () => {
     axiosSecure.post("/reviews", reviewDetails).then((res) => {
       if (res.data.insertedId) {
         setReviewAdded(true);
+        review_refetch()
       }
     });
   };
@@ -162,12 +175,12 @@ const ProductDetails = () => {
                     className="w-40 "
                     size="large"
                     name="half-rating-read"
-                    value={avgRatings}
+                    value={reviews.length > 0 ? avgRatings : '0'}
                     precision={0.1}
                     readOnly
                   />{" "}
                   <p className="font-semibold text-xl ml-1">
-                    ({avgRatings.toFixed(1)}/5)
+                    ({reviews.length > 0 ? avgRatings.toFixed(1) : '0'}/5)
                   </p>
                 </div>
                 <p className="text-[#333333] text-sm">
@@ -281,13 +294,13 @@ const ProductDetails = () => {
                     />
                   </div>
 
-                  <Rating
+                  <div className="flex gap-2 items-center mb-2"><Rating
                     size="large"
                     name="simple-controlled"
                     precision={0.1}
                     value={rating}
                     onChange={handleRatingChange}
-                  />
+                  /> <p className="text-lg font-semibold lato_font border border-base-300 py-1 px-2 w-fit">{rating}</p></div>
 
                   <button
                     type="submit"
