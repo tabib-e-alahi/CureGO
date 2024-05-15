@@ -55,7 +55,7 @@ const Navbar = () => {
             </div>
             <div
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[4]  rounded-box"
+              className="menu menu-sm dropdown-content mt-3 z-[4] bg-transparent rounded-box"
             >
               <SkinConcerns></SkinConcerns>
             </div>
