@@ -34,7 +34,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-[#f6f4f1] p-8">
+      <div className="navbar bg-[#f6f4f1] py-8">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn  ">
@@ -74,7 +74,7 @@ const Navbar = () => {
           <input
             type="text"
             placeholder="Search"
-            className="bg-[#f6f4f1] rounded-sm  border w-32 py-1 ps-1"
+            className="bg-white rounded-sm  border w-42 p-1 ps-1 focus-within:outline-0"
           />
           {user ? (
             <div className="dropdown dropdown-end">
@@ -138,7 +138,7 @@ const Navbar = () => {
       </div>
     
 
-      <div className=" bg-[#222222] w-11/12  mx-auto text-white text-center py-2">
+      <div className=" bg-[#222222] text-white text-center py-2">
             {navLinks}
         </div>
     </div>

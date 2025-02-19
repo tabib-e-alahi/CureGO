@@ -10,12 +10,15 @@ const MainLayout = () => {
     location.pathname.includes("login") || location.pathname.includes("signUp");
 
   return (
-    <div className={`${noHeaderFooter ? 'bg-white' : 'bg-[#f6f4f1]'}`}>
-        {noHeaderFooter && <SpecialNav></SpecialNav>}
+    <div className={`${noHeaderFooter ? "bg-white" : "bg-[#f6f4f1]"}`}>
+      {noHeaderFooter && <SpecialNav></SpecialNav>}
       {noHeaderFooter || <Promotion></Promotion>}
-      {noHeaderFooter || <Navbar></Navbar>}
-      <Outlet></Outlet>
-      {noHeaderFooter || <Footer></Footer>}
+      <div className="max-w-7xl mx-auto">
+        
+        {noHeaderFooter || <Navbar></Navbar>}
+        <Outlet></Outlet>
+        {noHeaderFooter || <Footer></Footer>}
+      </div>
     </div>
   );
 };
