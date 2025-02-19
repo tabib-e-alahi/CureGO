@@ -34,13 +34,13 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="navbar bg-[#f6f4f1] py-8">
+      <div className="navbar  py-8">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn  ">
+            <div tabIndex={0} role="button" className="btn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-12 w-12"
+                className="h-12 w-12 custom_svg"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

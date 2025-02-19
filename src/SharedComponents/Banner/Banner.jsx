@@ -18,7 +18,6 @@ const Banner = () => {
       <div className="text-center w-11/12 mx-auto mt-10 rounded-xl">
         <Swiper
         spaceBetween={30}
-        
         centeredSlides={true}
         autoplay={{
           delay: 3000,
