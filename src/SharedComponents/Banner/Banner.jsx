@@ -15,12 +15,12 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 const Banner = () => {
   return (
     <>
-      <div className="text-center w-11/12 mx-auto mt-10 rounded-sm">
+      <div className="text-center w-10/12 mx-auto mt-10 rounded-xl">
         <Swiper
         spaceBetween={30}
         centeredSlides={true}
         autoplay={{
-          delay: 2000,
+          delay: 3000,
           disableOnInteraction: false,
         }}
         pagination={{
@@ -28,15 +28,15 @@ const Banner = () => {
         }}
         navigation={true}
         modules={[Autoplay, Pagination, Navigation]}
-        className="mySwiper"
+        className="mySwiper rounded-xl"
       >
-        <SwiperSlide><img className="h-[700px] w-full" src={banner_1} alt="" /></SwiperSlide>
-        <SwiperSlide><img className="h-[700px] w-full" src={b2} alt="" /></SwiperSlide>
-        <SwiperSlide><img className="h-[700px] w-full" src={b3} alt="" /></SwiperSlide>
-        <SwiperSlide><img className="h-[700px] w-full" src={banner_4} alt="" /></SwiperSlide>
-        <SwiperSlide><img className="h-[700px] w-full" src={b4} alt="" /></SwiperSlide>
-        <SwiperSlide><img className="h-[700px] w-full" src={banner_2} alt="" /></SwiperSlide>
-        <SwiperSlide><img className="h-[700px] w-full" src={banner_3} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[500px] rounded-xl w-full" src={banner_1} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[500px] rounded-xl w-full" src={b2} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[500px] rounded-xl w-full" src={b3} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[500px] rounded-xl w-full" src={banner_4} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[500px] rounded-xl w-full" src={b4} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[500px] rounded-xl w-full" src={banner_2} alt="" /></SwiperSlide>
+        <SwiperSlide><img className="h-[500px] rounded-xl w-full" src={banner_3} alt="" /></SwiperSlide>
       </Swiper>
       </div>
     </>

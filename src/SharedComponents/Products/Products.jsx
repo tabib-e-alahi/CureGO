@@ -17,6 +17,11 @@ const Products = () => {
 })
 
 
+// products.map((p,idx) => {
+//   if (idx === 3){
+//     p.product_image = products[6].product_image
+//   }
+// })
 
   const filteredProducts = selectedConcern
     ? products.filter((product) =>

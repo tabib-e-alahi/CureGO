@@ -1,19 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poly:ital@0;1&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-.logo{
-  font-family: "Playfair Display", serif;
-  font-weight: 800;
+
+
+.font-times-new-roman{
+  font-family:'Times New Roman', Times, serif;
+  font-weight: 400;
   font-style: normal;
 }
+
+.lato-font {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+}
+
 
 .shadow-class{
     box-shadow: none !important;
 }
-
-
-
-
 
 .nav_items{
   appearance: button;
@@ -40,5 +44,10 @@
   -webkit-user-select: none;
   vertical-align: middle;
   white-space: nowrap;
+}
+
+.nav_menu:hover{
+  background-color: #F2F2F2;
+  color: #222222;
 }
 

@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import profile from "../../assets/profile.png";
 import cartIcon from "../../assets/cart.png";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 import useCart from "../../hooks/useCart";
 import SkinConcerns from "../SkinConcerns/SkinConcerns";
@@ -16,20 +16,20 @@ const Navbar = () => {
 
   // console.log(user);
   const navLinks = (
-    <>
-      {/* <li>
-        <NavLink className="nav_items">Home</NavLink>
+    <ul className="flex justify-center gap-10 font-times-new-roman items-center">
+      <li className="">
+        <NavLink >Home</NavLink>
       </li>
       <li>
-        <NavLink to='/about'>About Us</NavLink>
+        <NavLink to='/about'>Brands</NavLink>
       </li>
       <li>
-        <NavLink to='/contact'>Contact Us</NavLink>
+        <NavLink to='/contact'>Discover</NavLink>
       </li>
       <li>
         <NavLink>About</NavLink>
-      </li> */}
-    </>
+      </li>
+    </ul>
   );
 
   return (
@@ -63,8 +63,9 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <div>
-            <a className="text-6xl logo text-[#A6776A]">CureCo</a>
-            <p className="font-bold text-center text-[#A6776A]">
+            {/* <button ></button> */}
+            <Link to='/' className="text-6xl lato-font font-semibold text-[#222222]">CureCo</Link>
+            <p className="font-bold text-center ">
               An extensive skin care
             </p>
           </div>
@@ -135,12 +136,10 @@ const Navbar = () => {
           </Link>
         </div>
       </div>
-      <ul className="flex justify-center items-center gap-10 text-xl text-black pb-4">
-        {navLinks}
-      </ul>
+    
 
-      <div className="bg-gray-600 w-11/12 mx-auto text-white text-center py-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quidem id quos, animi non reprehenderit! Saepe, itaque vitae! Magni, illo!
+      <div className=" bg-[#222222] w-11/12  mx-auto text-white text-center py-2">
+            {navLinks}
         </div>
     </div>
   );

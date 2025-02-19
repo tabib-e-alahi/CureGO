@@ -176,12 +176,12 @@ const ProductDetails = () => {
                     className="w-40 "
                     size="large"
                     name="half-rating-read"
-                    value={reviews.length > 0 ? avgRatings : '0'}
+                    value={reviews?.length > 0 ? avgRatings : '0'}
                     precision={0.1}
                     readOnly
                   />{" "}
                   <p className="font-semibold text-xl ml-1">
-                    ({reviews.length > 0 ? avgRatings.toFixed(1) : '0'}/5)
+                    ({reviews?.length > 0 ? avgRatings.toFixed(1) : '0'}/5)
                   </p>
                 </div>
                 <p className="text-[#333333] text-sm">
